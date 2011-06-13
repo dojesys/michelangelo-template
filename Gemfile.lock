@@ -258,7 +258,6 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  coffee-script
   compass
   cucumber-rails
   database_cleaner
