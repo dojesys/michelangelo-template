@@ -9,7 +9,7 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
-gem 'coffee-script'
+# gem 'coffee-script'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'compass'
