@@ -18,7 +18,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'omniauth'
 
-gem 'thin'
+gem 'thin', :group => [:development, :test]
 
 gem 'rspec-rails', :group => [:development, :test]
 gem "nifty-generators", :group => :development
