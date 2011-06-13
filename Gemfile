@@ -5,6 +5,8 @@ gem 'rails', '3.0.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem "rake", "0.8.7"
+
 gem 'pg', :require => 'pg'
 
 group :development, :test do
