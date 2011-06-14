@@ -4,10 +4,15 @@
 $blueprint-grid-columns: 24;
 $blueprint-container-size: 950px;
 $blueprint-grid-margin: 10px;
-$font-color: #fff;
-$link-color: #fff;
-$link-hover-color: #0099ff;
 $blueprint-font-size: 14px;
+
+// Colors
+$header-background-color: #2F2F2F;
+$footer-background-color: #2F2F2F;
+$body-background-color: #E5ECF9;
+// $header-line-color: darken($header-background-color, 20%);
+$header-line-color: #fff;
+//$header-line-color: #ccc;
 
 // Use this to calculate the width based on the total width.
 // Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.

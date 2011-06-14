@@ -1,90 +1,256 @@
-// This import applies a global reset to any page that imports this stylesheet.
 @import "blueprint/reset";
-
-// To configure blueprint, edit the partials/base.sass file.
 @import "partials/base";
-
-// Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
-
-// Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
 @import "blueprint/typography";
 
 
-// To generate css equivalent to the blueprint css but with your
-// configuration applied, uncomment:
-// @include blueprint
+//@import "compass/reset.scss";
+@import "compass/layout.scss";
 
-// If you are doing a lot of stylesheet concatenation, it is suggested
-// that you scope your blueprint styles, so that you can better control
-// what pages use blueprint when stylesheets are concatenated together.
-body.bp {
-  @include blueprint-typography(true);
-  @include blueprint-utilities;
-  @include blueprint-debug;
-  @include blueprint-interaction;
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+
+body, html {
+	height: 100%;	
 }
 
-//form.bp {
-  //@include blueprint-form;
-  // You'll probably want to remove the scaffolding once you start styling your site.
-  //@include blueprint-scaffolding; 
-//}
+body {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+	@include sticky-footer(170px, "#layout", "#layout_footer", "#footer");
 
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
-	background-color: #2F2F2F;
-  #container {
-//	 @include showgrid;
-   @include container;
- 	}
-  #header, #footer {
-    @include column($blueprint-grid-columns); }
-  #sidebar {
-    @include column(6); }
-  #content {
-    @include column(18, true); } }
-		.simple_form label {
-		  float: left;
-		  width: 100px;
-		  text-align: right;
-		  margin: 2px 10px;
+	height: 100%;
+	background-color: $body-background-color;
+
+	.wrapper {
+		height: 100%;
+		min-height: 100%;
+
+		#header {
+			background-color: $header-background-color;
+			height: 150px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			#container {
+				@include container;
+
+				#left {
+					@include column(19);
+					
+					#logo {
+
+						h1 {
+							padding-top: 10px;
+						}						
+					}
+				}
+
+				#right {
+					@include column(5	, true);
+
+				}
+
+				h1 {
+					color: #fff;
+				}
+			}
 		}
 
-		.simple_form div.input {
-		  margin-bottom: 10px;
-		}
+		#footer {
+			background-color: $footer-background-color;
+			
 
-		.simple_form div.boolean, .simple_form input[type='submit'] {
-		  margin-left: 120px;
-		}
+			#container {
+				@include container;
+				padding-top: 10px;
+				height: 160px;
 
-		.simple_form div.boolean label, .simple_form label.collection_radio {
-		  float: none;
-		  margin: 0;
-		}
+				h1 {
+					color: #fff;
+				}
 
-		.simple_form label.collection_radio {
-		  margin-right: 10px;
-		  margin-left: 2px;
-		}
+				#powered-by {
+					height: 150px;
+					background-color: lighten($footer-background-color, 10%);
+					border-radius: 10px;
+				  -moz-border-radius: 10px;
+				  -webkit-border-radius: 10px;
+				}
 
-		.simple_form .error {
-		  clear: left;
-		  margin-left: 120px;
-		  font-size: 12px;
-		  color: #D00;
-		  display: block;
-		}
+				#left {
+					@include column(8);			
+					#menu {
+						height: 150px;
+						background-color: lighten($footer-background-color, 10%);
+						border-radius: 10px;
+					  -moz-border-radius: 10px;
+					  -webkit-border-radius: 10px;
+					
+						ul {
+							padding-top: 10px;
+							list-style-type: none;
+						}
 
-		.simple_form .hint {
-		  clear: left;
-		  margin-left: 120px;
-		  font-size: 12px;
-		  //color: #555;
-		  display: block;
-		  font-style: italic;
+						a {
+							color:#fff;
+					    text-decoration: none;
+							display: block;
+							padding: 3px 10px;
+
+							&:hover {
+								background: #E5ECF9;
+								color:#000;
+							}
+						}
+
+					}
+				}
+				
+				#middle {
+					@include column(8);					
+
+					#menu {
+						height: 150px;
+						background-color: lighten($footer-background-color, 10%);
+						border-radius: 10px;
+					  -moz-border-radius: 10px;
+					  -webkit-border-radius: 10px;
+					
+						ul {
+							padding-top: 10px;
+							list-style-type: none;
+						}
+
+						a {
+							color:#fff;
+					    text-decoration: none;
+							display: block;
+							padding: 3px 10px;
+
+							&:hover {
+								background: #E5ECF9;
+								color:#000;
+							}
+						}
+
+					}
+				}
+
+				#right {
+					@include column(8, true);
+
+					#menu {
+						height: 150px;
+						background-color: lighten($footer-background-color, 10%);
+						border-radius: 10px;
+					  -moz-border-radius: 10px;
+					  -webkit-border-radius: 10px;
+					
+						ul {
+							padding-top: 10px;
+							list-style-type: none;
+						}
+
+						a {
+							color:#fff;
+					    text-decoration: none;
+							display: block;
+							padding: 3px 10px;
+
+							&:hover {
+								background: #E5ECF9;
+								color:#000;
+							}
+						}
+
+					}					
+
+
+				}
+				
+			}
 		}
+			  
+		#main {
+			
+			#container {
+//				@include showgrid;
+				@include container;
+				padding-left: 10px;
+				padding-top: 10px;
+				padding-bottom: 20px;
+				
+				//@include column(18, true);
+				
+				#flash {
+					display: none;
+					margin: 15px;
+					background-image: url("/images/red_bg.png");
+					border-radius: 10px;
+				  -moz-border-radius: 10px;
+				  -webkit-border-radius: 10px;
+
+					#flash_notice {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						padding-left: 20px;						
+					}
+
+				}
+				
+				#content {
+
+				}
+			}
+		} 
+
+	}
+
+}
+
+
+
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.simple_form .error {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #D00;
+  display: block;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  //color: #555;
+  display: block;
+  font-style: italic;
+}
+
+div.ui-datepicker{
+ font-size:	12px;
+}

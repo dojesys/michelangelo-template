@@ -4,6 +4,6 @@
   = f.input :gender
   = f.input :location
   = f.input :website
-  = f.input :birthday
+  = f.input :birthday, :as => :string, :input_html => { :value => l(@profile.birthday) }
   = f.input :picture
   = f.button :submit
