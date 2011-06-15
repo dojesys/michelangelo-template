@@ -316,17 +316,17 @@ body #layout {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -200px;
+  margin-bottom: -145px;
 }
 /* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 body #layout #layout_footer {
-  height: 200px;
+  height: 145px;
 }
 /* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 body #footer {
   clear: both;
   position: relative;
-  height: 200px;
+  height: 145px;
 }
 /* line 23, ../../app/stylesheets/screen.scss */
 body .wrapper {
@@ -336,7 +336,7 @@ body .wrapper {
 /* line 27, ../../app/stylesheets/screen.scss */
 body .wrapper #header {
   background-color: #2f2f2f;
-  height: 150px;
+  height: 75px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -386,12 +386,12 @@ body .wrapper #footer #container {
   overflow: hidden;
   *zoom: 1;
   padding-top: 10px;
-  height: 190px;
+  height: 135px;
 }
 /* line 66, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   padding-left: 10px;
 }
@@ -408,18 +408,19 @@ body .wrapper #footer #container #left {
 }
 /* line 75, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #left #menu {
-  height: 190px;
+  height: 135px;
   background-color: #494949;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  font-size: 11px;
 }
-/* line 43, ../../app/stylesheets/partials/_base.scss */
+/* line 44, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 48, ../../app/stylesheets/partials/_base.scss */
+/* line 49, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu a {
   color: #fff;
   text-decoration: none;
@@ -427,7 +428,7 @@ body .wrapper #footer #container #left #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #494949;
 }
-/* line 55, ../../app/stylesheets/partials/_base.scss */
+/* line 56, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu a:hover {
   color: #db4865;
 }
@@ -444,18 +445,19 @@ body .wrapper #footer #container #middle {
 }
 /* line 83, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #middle #menu {
-  height: 190px;
+  height: 135px;
   background-color: #494949;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  font-size: 11px;
 }
-/* line 43, ../../app/stylesheets/partials/_base.scss */
+/* line 44, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 48, ../../app/stylesheets/partials/_base.scss */
+/* line 49, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu a {
   color: #fff;
   text-decoration: none;
@@ -463,7 +465,7 @@ body .wrapper #footer #container #middle #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #494949;
 }
-/* line 55, ../../app/stylesheets/partials/_base.scss */
+/* line 56, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu a:hover {
   color: #db4865;
 }
@@ -480,18 +482,19 @@ body .wrapper #footer #container #right {
 }
 /* line 91, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #right #menu {
-  height: 190px;
+  height: 135px;
   background-color: #494949;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  font-size: 11px;
 }
-/* line 43, ../../app/stylesheets/partials/_base.scss */
+/* line 44, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 48, ../../app/stylesheets/partials/_base.scss */
+/* line 49, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu a {
   color: #fff;
   text-decoration: none;
@@ -499,7 +502,7 @@ body .wrapper #footer #container #right #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #494949;
 }
-/* line 55, ../../app/stylesheets/partials/_base.scss */
+/* line 56, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu a:hover {
   color: #db4865;
 }
@@ -517,7 +520,7 @@ body .wrapper #main #container {
 body .wrapper #main #container #flash {
   display: none;
   margin: 15px;
-  background-color: #efefe3;
+  background-color: #fbec88;
   border: dashed 1px #db4865;
   color: #db4865;
   border-radius: 10px;
@@ -535,13 +538,7 @@ body .wrapper #main #container #content h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
 }
 
-/* line 147, ../../app/stylesheets/screen.scss */
-.simple_form {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/* line 154, ../../app/stylesheets/screen.scss */
+/* line 146, ../../app/stylesheets/screen.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -549,12 +546,12 @@ body .wrapper #main #container #content h1 {
   margin: 2px 10px;
 }
 
-/* line 161, ../../app/stylesheets/screen.scss */
+/* line 153, ../../app/stylesheets/screen.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 168, ../../app/stylesheets/screen.scss */
+/* line 160, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"],
 .simple_form input[type="password"],
 .simple_form input[type="email"],
@@ -568,8 +565,11 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 177, ../../app/stylesheets/screen.scss */
-.simple_form input[type="text"]:focus, .simple_form textarea:focus {
+/* line 172, ../../app/stylesheets/screen.scss */
+.simple_form input[type="text"]:focus,
+.simple_form input[type="password"]:focus,
+.simple_form input[type="email"]:focus,
+.simple_form textarea:focus {
   background-color: #efefe3;
   color: black;
   border: solid 1px darkten(#e5ecf9, 15%);
@@ -578,15 +578,17 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 185, ../../app/stylesheets/screen.scss */
+/* line 180, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit'] {
+  float: right;
+  margin-top: 10px;
   background-color: #f1f5fc;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
 
-/* line 190, ../../app/stylesheets/screen.scss */
+/* line 187, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit']:focus {
   background-color: #efefe3;
   border: solid 1px darkten(#e5ecf9, 15%);
@@ -595,24 +597,24 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 193, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 200, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
 
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 202, ../../app/stylesheets/screen.scss */
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
 
-/* line 210, ../../app/stylesheets/screen.scss */
+/* line 207, ../../app/stylesheets/screen.scss */
 .simple_form .error {
   clear: left;
   margin-left: 120px;
@@ -621,7 +623,7 @@ body .wrapper #main #container #content h1 {
   display: block;
 }
 
-/* line 218, ../../app/stylesheets/screen.scss */
+/* line 215, ../../app/stylesheets/screen.scss */
 .simple_form .hint {
   clear: left;
   margin-left: 120px;
@@ -633,12 +635,12 @@ body .wrapper #main #container #content h1 {
   padding-left: 5px;
 }
 
-/* line 229, ../../app/stylesheets/screen.scss */
+/* line 226, ../../app/stylesheets/screen.scss */
 div.ui-datepicker {
   font-size: 12px;
 }
 
-/* line 233, ../../app/stylesheets/screen.scss */
+/* line 230, ../../app/stylesheets/screen.scss */
 #gravatar {
   margin-bottom: 5px;
   padding: 5px;

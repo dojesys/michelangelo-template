@@ -65,7 +65,7 @@ body {
 
 				h1 {
 					@include font-titles;
-					font-size: 22px;
+					font-size: 18px;
 					color: $footer-titles-color;
 					padding-left: 10px;
 				}
@@ -143,14 +143,6 @@ body {
 
 }
 
-
-.simple_form {
-	padding-top: 10px;
-	padding-bottom: 10px;
-//  border-top: groove 2px; 	
-//	border-bottom: groove 2px;	
-}
-
 .simple_form label {
   float: left;
   width: 100px;
@@ -174,7 +166,10 @@ body {
 
 }
 
-.simple_form input[type="text"]:focus, .simple_form textarea:focus {
+.simple_form input[type="text"]:focus,
+.simple_form input[type="password"]:focus, 
+.simple_form input[type="email"]:focus,
+.simple_form textarea:focus {
 		background-color: $input-background-color;
 		color: $input-foreground-color;
     border: solid 1px darkten($body-background-color, 15%); 
@@ -183,6 +178,8 @@ body {
 }
 
 .simple_form input[type='submit'] {
+	float: right;
+	margin-top: 10px;
   background-color: lighten($body-background-color, 3%);
 	@include radius(5px);
 }

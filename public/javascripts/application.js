@@ -33,6 +33,5 @@ $(function() {
 
 //button
 $(function() {
-	$( "button, input:submit, a", ".demo" ).button();
-	$( "a", ".demo" ).click(function() { return false; });
+	$( "input:submit").button();
 });
