@@ -30,3 +30,9 @@ $(function() {
 $(function() {
 	$( "#accordion" ).accordion( { clearStyle: true } );
 });
+
+//button
+$(function() {
+	$( "button, input:submit, a", ".demo" ).button();
+	$( "a", ".demo" ).click(function() { return false; });
+});
