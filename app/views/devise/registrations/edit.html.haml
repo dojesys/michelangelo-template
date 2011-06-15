@@ -1,0 +1,23 @@
+%h1
+  Edit 
+  = resource_name.to_s.humanize
+
+#accordion
+  %h3 
+    %a{ :href => "#" } Editing
+  %div
+    = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+      = f.input :email
+      = f.input :password, :hint => 'leave blank if you dont want to change it'
+      = f.input :password_confirmation
+      = f.input :current_password, :hint => 'we need your current password to confirm your changes'
+      
+      %hr/
+      = f.button :submit
+      
+  %h3 
+    %a{ :href => "#" } Cancel my account
+  %div
+    Unhappy?
+    = link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete
+    = link_to "Back", :back

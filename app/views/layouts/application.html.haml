@@ -9,7 +9,7 @@
 
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
-    = stylesheet_link_tag 'hot-sneaks/jquery-ui-1.8.13.custom.css'
+    = stylesheet_link_tag 'custom-theme/jquery-ui-1.8.13.custom.css'
     /[if lt IE 8]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 
@@ -36,7 +36,7 @@
             #content
               - if show_title?
                 %h1= yield(:title)
-
+              
               = yield
       
         #layout_footer
@@ -44,12 +44,15 @@
       #footer
         #container
           #left
+            %h1 Left
             #menu
               = render 'layouts/top_menu'
           #middle
+            %h1 Middle
             #menu
               = render 'layouts/top_menu'
           #right
+            %h1 Right
             #menu
               = render 'layouts/top_menu'
 

@@ -4,11 +4,10 @@ class CreateProfiles < ActiveRecord::Migration
       t.integer :user_id
       t.string :display_name
       t.text :about
-      t.string :gender
+      t.integer :gender, :default => 0
       t.string :location
       t.string :website
       t.date :birthday
-      t.string :picture
       t.timestamps
     end
   end

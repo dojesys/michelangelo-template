@@ -21,6 +21,7 @@ gem 'simple_form'
 
 gem 'devise'
 gem 'omniauth'
+gem 'gravtastic'
 
 gem 'thin', :group => [:development, :test]
 

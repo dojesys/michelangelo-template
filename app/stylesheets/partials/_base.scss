@@ -4,16 +4,62 @@
 $blueprint-grid-columns: 24;
 $blueprint-container-size: 950px;
 $blueprint-grid-margin: 10px;
-$blueprint-font-size: 14px;
+
+$header-height: 150px;
+$footer-height: 200px;
 
 // Colors
 $header-background-color: #2F2F2F;
 $footer-background-color: #2F2F2F;
 $body-background-color: #E5ECF9;
-// $header-line-color: darken($header-background-color, 20%);
-$header-line-color: #fff;
-//$header-line-color: #ccc;
+$flash-background-color: #EFEFE3;
+$header-titles-color: #fff;
+$footer-titles-color: #fff;
+
+$input-background-color: #EFEFE3;
+$input-foreground-color: #000;
+$highlight-color: #db4865;	
+
+// Fonts
+$blueprint-font-family: Arial, Helvetica, sans-serif;
+$blueprint-font-size: 14px;
 
 // Use this to calculate the width based on the total width.
 // Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+
+// Mixins
+@mixin radius($radius: 5px) {
+	border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;	
+}
+
+@mixin menus() {
+	height: $footer-height - 10px;
+	background-color: lighten($footer-background-color, 10%);
+	@include radius(10px);
+
+	ul {
+		padding-top: 10px;
+		list-style-type: none;
+	}
+
+	a {
+		color:#fff;
+    text-decoration: none;
+		display: block;
+		padding: 3px 10px;
+		border-bottom: dotted 1px lighten($footer-background-color, 10%);
+
+		&:hover {
+			color: $highlight-color;
+		}
+	}
+
+}
+
+@mixin font-titles {
+	font-family: 'Arial Black', Gadget, sans-serif;
+}
+

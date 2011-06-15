@@ -1,9 +1,55 @@
 = simple_form_for @profile do |f|
-  = f.input :display_name, :hint => 'Your Real Name'
-  = f.input :about
-  = f.input :gender
-  = f.input :location
-  = f.input :website
-  = f.input :birthday, :as => :string, :input_html => { :value => l(@profile.birthday) }
-  = f.input :picture
   = f.button :submit
+  #accordion
+    %h3
+      %a{ :href => "#" } General
+    %div
+      = f.label 'Your Gravatar'
+      #gravatar
+        = image_tag current_user.gravatar_url(:size => 240)
+  
+      = f.input :display_name, :hint => 'Your Real Name'
+      = f.input :about, :hint => 'Something About You', :input_html => { :rows => '2' }
+      = f.input :gender, :as => :radio, :collection => { "Male" => 0, "Female" => 1 }
+      = f.input :location, :hint => 'Where in the world are you?'
+      = f.input :website, :hint => 'Do you have a website or blog?'
+      - if @profile.birthday
+        = f.input :birthday, :as => :string, :input_html => { :value => l(@profile.birthday) }
+      - else
+        = f.input :birthday, :as => :string
+    %h3
+      %a{ :href => "#" } Connections
+    %div
+      %p
+        Conections
+      
+
+//  #tabs
+//    %ul
+//      %li
+//        %a{ :href => '#tabs-1'}
+//          General
+//      %li
+//        %a{ :href => '#tabs-2'}
+//          Connections
+//    #tabs-1  
+//      = f.label 'Your Gravatar'
+//      #gravatar
+//        = image_tag current_user.gravatar_url(:size => 240)
+    
+//      = f.input :display_name, :hint => 'Your Real Name'
+//      = f.input :about, :hint => 'Something About You', :input_html => { :rows => '2' }
+//      = f.input :gender, :as => :radio, :collection => { "Male" => 0, "Female" => 1 }
+//      = f.input :location, :hint => 'Where in the world are you?'
+//      = f.input :website, :hint => 'Do you have a website or blog?'
+//      - if @profile.birthday
+//        = f.input :birthday, :as => :string, :input_html => { :value => l(@profile.birthday) }
+//      - else
+//        = f.input :birthday, :as => :string
+//    #tabs-2
+//      %p
+//        Conections
+//      
+//  = f.button :submit
+//
+//
