@@ -54,6 +54,32 @@ body {
 			}
 		}
 
+		#breadcrumbs {
+			background-color: #fff; 
+
+			#container {
+				@include container;
+				font-size: 11px;
+				color: #000;
+	
+				a {
+					color: $highlight-color;
+			    text-decoration: none;
+					padding-top: 1px;
+					padding-bottom: 1px;
+					padding-right: 3px;
+
+					&:hover {
+//						background-color: $body-background-color;
+						background-color: $footer-background-color;
+						color: #fff;
+					}
+
+				}
+		  }
+	
+		}
+
 		#footer {
 			background-color: $footer-background-color;
 			
@@ -107,7 +133,7 @@ body {
 				padding-bottom: 20px;
 				
 				//@include column(18, true);
-				
+								
 				#flash {
 					display: none;
 					margin: 15px;

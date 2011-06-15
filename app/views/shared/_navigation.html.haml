@@ -1,0 +1,8 @@
+- nav.each do |n|
+  - if n == nav.last
+    = n[:title]
+  - else
+    = link_to n[:title], n[:url]
+    &raquo;
+
+= link_to yield(:title), request.path, :class => 'no-link'
