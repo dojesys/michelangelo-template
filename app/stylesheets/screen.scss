@@ -128,13 +128,17 @@ body {
 					h1 {
 						@include font-titles;
 					}
+
+					h2 {
+						@include font-titles;
+						font-size: 24px;
+						margin-bottom: 0px;
+					}
+					
 					
 					#tabs {
 					}
 					
-					#accordion {
-						
-					}
 				}
 			}
 		} 
@@ -230,4 +234,8 @@ div.ui-datepicker{
 #gravatar {
   margin-bottom: 5px;
   padding: 5px;	
+	
+	img {
+		margin-left: 5px;
+	}
 }

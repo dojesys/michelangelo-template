@@ -10,7 +10,7 @@
     #tabs-1  
       = f.label 'Your Gravatar'
       #gravatar
-        = image_tag current_user.gravatar_url(:size => 240)
+        = image_tag current_user.gravatar_url(:size => 120)
     
       = f.input :display_name, :hint => 'Your Real Name'
       = f.input :about, :hint => 'Something About You', :input_html => { :rows => '2' }

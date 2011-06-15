@@ -537,8 +537,14 @@ body .wrapper #main #container #flash #flash_notice {
 body .wrapper #main #container #content h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
 }
+/* line 132, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content h2 {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
 
-/* line 146, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -546,12 +552,12 @@ body .wrapper #main #container #content h1 {
   margin: 2px 10px;
 }
 
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 157, ../../app/stylesheets/screen.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 160, ../../app/stylesheets/screen.scss */
+/* line 164, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"],
 .simple_form input[type="password"],
 .simple_form input[type="email"],
@@ -565,7 +571,7 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 172, ../../app/stylesheets/screen.scss */
+/* line 176, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"]:focus,
 .simple_form input[type="password"]:focus,
 .simple_form input[type="email"]:focus,
@@ -578,7 +584,7 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 180, ../../app/stylesheets/screen.scss */
+/* line 184, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit'] {
   float: right;
   margin-top: 10px;
@@ -588,7 +594,7 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 187, ../../app/stylesheets/screen.scss */
+/* line 191, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit']:focus {
   background-color: #efefe3;
   border: solid 1px darkten(#e5ecf9, 15%);
@@ -597,24 +603,24 @@ body .wrapper #main #container #content h1 {
   -webkit-border-radius: 5px;
 }
 
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 197, ../../app/stylesheets/screen.scss */
+/* line 201, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
 
-/* line 202, ../../app/stylesheets/screen.scss */
+/* line 206, ../../app/stylesheets/screen.scss */
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
 
-/* line 207, ../../app/stylesheets/screen.scss */
+/* line 211, ../../app/stylesheets/screen.scss */
 .simple_form .error {
   clear: left;
   margin-left: 120px;
@@ -623,7 +629,7 @@ body .wrapper #main #container #content h1 {
   display: block;
 }
 
-/* line 215, ../../app/stylesheets/screen.scss */
+/* line 219, ../../app/stylesheets/screen.scss */
 .simple_form .hint {
   clear: left;
   margin-left: 120px;
@@ -635,13 +641,17 @@ body .wrapper #main #container #content h1 {
   padding-left: 5px;
 }
 
-/* line 226, ../../app/stylesheets/screen.scss */
+/* line 230, ../../app/stylesheets/screen.scss */
 div.ui-datepicker {
   font-size: 12px;
 }
 
-/* line 230, ../../app/stylesheets/screen.scss */
+/* line 234, ../../app/stylesheets/screen.scss */
 #gravatar {
   margin-bottom: 5px;
   padding: 5px;
+}
+/* line 238, ../../app/stylesheets/screen.scss */
+#gravatar img {
+  margin-left: 5px;
 }
