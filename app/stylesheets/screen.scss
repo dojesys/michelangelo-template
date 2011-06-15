@@ -163,7 +163,7 @@ body {
 .simple_form input[type="email"], 
 .simple_form textarea {
     margin-bottom: 5px;
-    padding: 7px;
+    padding: 3px;
     border: solid 1px lighten($body-background-color, 15%); 
     background-color: lighten($body-background-color, 15%);
 		@include radius(5px);
