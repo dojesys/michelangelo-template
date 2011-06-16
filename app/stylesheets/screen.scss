@@ -19,13 +19,103 @@ body {
 
 	height: 100%;
 	background-color: $body-background-color;
-
+	background-image: url('/images/body-bg.png');
+	
 	.wrapper {
 		height: 100%;
 		min-height: 100%;
 
+		#top {
+			background-color: $top-background;
+			
+			#container {
+				@include container;
+				color: $top-foreground;	
+				font-size: 11px;
+				
+				#left {
+					@include column(17);
+					
+					#top-menu {
+
+						ul {
+							margin:0;
+							padding:0;
+							display:block;
+							list-style-type:none;						
+						
+						}
+
+						a {
+							border-right: dashed 1px;
+
+							margin-top: 10px;
+							margin-bottom: 2px;
+
+							padding-top: 0px;
+							padding-bottom: 0px;
+
+							padding-left: 5px;
+							padding-right: 5px;
+
+							color: $top-foreground;
+							font-weight:bold;
+							text-decoration:none;
+							display:block;
+							float:left;
+							
+							&:hover {
+								color: $highlight-color;
+								border-right: dashed 1px;
+							}
+							
+						}
+					}				
+				}
+				
+				#right {
+					@include column(7, true);
+			    margin-top: 5px;
+					
+					#search {
+						margin: 0px;
+						padding: 0px;
+
+						.simple_form {
+							
+							input[type="text"], {
+								display: inline;
+								margin-bottom: 7px;
+								margin-left: 0px;
+								margin-right: 0px;
+								padding-top: 3px;
+								padding-bottom: 3px;
+								padding-left: 10px;
+								padding-right: 10px;
+								width: 180px;
+								@include radius(10px);
+								outline: 0 none;
+							}
+						
+							input[type='submit'] {
+								display: inline;
+								margin-top: -28px;
+								height: 21px;
+								font-size: 10px;
+								@include radius(10px);	
+								outline: 0 none;
+							}
+	
+						}
+					}
+				}
+			}
+			
+		}
+		
 		#header {
 			background-color: $header-background-color;
+			background-image: url('/images/header-bg.jpg');
 			height: $header-height;
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -55,12 +145,12 @@ body {
 		}
 
 		#breadcrumbs {
-			background-color: #fff; 
+			background-color: $breadcrumbs-background; 
 
 			#container {
 				@include container;
 				font-size: 11px;
-				color: #000;
+				color: $breadcrumbs-foreground;
 	
 				a {
 					color: $highlight-color;
@@ -68,13 +158,6 @@ body {
 					padding-top: 1px;
 					padding-bottom: 1px;
 					padding-right: 3px;
-
-					&:hover {
-//						background-color: $body-background-color;
-						background-color: $footer-background-color;
-						color: #fff;
-					}
-
 				}
 		  }
 	
@@ -82,6 +165,7 @@ body {
 
 		#footer {
 			background-color: $footer-background-color;
+			background-image: url('/images/header-bg.jpg');
 			
 
 			#container {
@@ -138,7 +222,7 @@ body {
 					display: none;
 					margin: 15px;
 					background-color: $flash-background-color;
-					border: dashed 1px $highlight-color;
+					border: solid 1px $highlight-color;
 					color: $highlight-color;
 					@include radius(10px);
 
@@ -190,7 +274,7 @@ body {
 .simple_form textarea {
     margin-bottom: 5px;
     padding: 3px;
-    border: solid 1px lighten($body-background-color, 15%); 
+    border: solid 1px $input-background-color;
     background-color: lighten($body-background-color, 15%);
 		@include radius(5px);
 
@@ -200,24 +284,18 @@ body {
 .simple_form input[type="password"]:focus, 
 .simple_form input[type="email"]:focus,
 .simple_form textarea:focus {
-		background-color: $input-background-color;
+		background-color: $input-focus-background-color;
 		color: $input-foreground-color;
     border: solid 1px darkten($body-background-color, 15%); 
 		@include radius(5px);
-		
+		outline: 1px solid $highlight-color;
 }
 
 .simple_form input[type='submit'] {
 	float: right;
-	margin-top: 10px;
-  background-color: lighten($body-background-color, 3%);
-	@include radius(5px);
 }
 
 .simple_form input[type='submit']:focus {
-	background-color: $input-background-color;
-  border: solid 1px darkten($body-background-color, 15%); 
-	@include radius(5px);
 }
 
 .simple_form div.boolean, .simple_form input[type='submit'] {
@@ -243,9 +321,9 @@ body {
 }
 
 .simple_form .hint {
+	@include font-titles;
   clear: left;
   margin-left: 120px;
-	@include font-titles;
   font-size: $blueprint-font-size - 2px;
   color: $highlight-color;
   display: block;

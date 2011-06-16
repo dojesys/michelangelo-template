@@ -1,0 +1,12 @@
+# app/config/application.yml
+defaults: &defaults
+  app_title: "Michelangelo Template"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

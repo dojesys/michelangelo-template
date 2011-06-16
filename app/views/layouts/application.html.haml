@@ -9,7 +9,7 @@
 
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
-    = stylesheet_link_tag 'custom-theme/jquery-ui-1.8.13.custom.css'
+    = stylesheet_link_tag 'smoothness/jquery-ui-1.8.13.custom.css'
     /[if lt IE 8]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 
@@ -20,11 +20,19 @@
     .wrapper
     
       #layout
+        #top
+          #container
+            #left
+              #top-menu
+                = render 'layouts/top_menu'
+            #right
+              #search
+                = render 'layouts/search'
         #header
           #container
             #left
               #logo
-                %h1 Encabezado
+                %h1= Settings.app_title
             #right
         
         #breadcrumbs

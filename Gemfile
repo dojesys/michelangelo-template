@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.8'
+gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -27,6 +27,8 @@ gem 'thin', :group => [:development, :test]
 
 gem 'rspec-rails', :group => [:development, :test]
 gem "nifty-generators", :group => :development
+
+gem 'settingslogic'
 
 group :test do
   gem 'cucumber-rails'

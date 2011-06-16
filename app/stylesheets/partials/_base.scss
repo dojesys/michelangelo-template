@@ -9,16 +9,22 @@ $header-height: 75px;
 $footer-height: 145px;
 
 // Colors
-$header-background-color: #2F2F2F;
-$footer-background-color: #2F2F2F;
-$body-background-color: #E5ECF9;
-$flash-background-color: #FBEC88;
+$header-background-color: #333333;
+$footer-background-color: #333333;
+$body-background-color: #CCCCCC;
+$flash-background-color: #333333;
+$breadcrumbs-background: #ffffff;
+$breadcrumbs-foreground: #000;
+$top-background: #ffffff;
+$top-foreground: #000;
+
 $header-titles-color: #fff;
 $footer-titles-color: #fff;
 
-$input-background-color: #EFEFE3;
+$input-focus-background-color: #EFEFE3;
+$input-background-color: #CCC;
 $input-foreground-color: #000;
-$highlight-color: #db4865;	
+$highlight-color: #7C8E46;	
 
 // Fonts
 $blueprint-font-family: Arial, Helvetica, sans-serif;
