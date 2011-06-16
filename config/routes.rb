@@ -4,7 +4,7 @@ MichelangeloTemplate::Application.routes.draw do
   
   put "profile/:id" => "profiles#update"
   
-  get "users/show"
+#  get "users/show/:id"
 
   get "home/index"
   
