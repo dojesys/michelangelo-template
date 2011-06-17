@@ -232,6 +232,13 @@ body {
 						padding-left: 20px;						
 					}
 
+					#flash_alert {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						padding-left: 20px;						
+						color: yellow;
+					}
+
 				}
 				
 				#content {
@@ -283,7 +290,6 @@ body {
     border: solid 1px $input-background-color;
     background-color: lighten($body-background-color, 15%);
 		@include radius(5px);
-
 }
 
 .simple_form input[type="text"]:focus,
@@ -348,14 +354,4 @@ div.ui-datepicker{
 	img {
 		margin-left: 5px;
 	}
-}
-
-.tooltip {
-//	display:none;
-//	background:transparent url(/tools/img/tooltip/black_arrow.png);
-	font-size:12px;
-	height:70px;
-	width:160px;
-	padding:25px;
-	color:#fff;	
 }

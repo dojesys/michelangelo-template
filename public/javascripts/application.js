@@ -18,7 +18,8 @@ $(function() {
 		showOn: "button",
 		showAnim: 'slide',
 		buttonImage: "/images/calendar.gif",
-		buttonImageOnly: true
+		buttonImageOnly: true,
+		onClose: function(dateText, inst) { $(inst.input).change().focusout(); }
 	});
 });	
 

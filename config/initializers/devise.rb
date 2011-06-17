@@ -1,3 +1,4 @@
+require "openid/store/filesystem"
 # Use this hook to configure devise mailer, warden hooks and so forth. The first
 # four configuration values can also be set straight in your models.
 Devise.setup do |config|
@@ -183,6 +184,7 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   #config.omniauth :facebook, "198381556874626", "269fd7630c5cc04ea90ee27b5b633add"
   config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
+  config.omniauth :open_id, OpenID::Store::Filesystem.new('/tmp')
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
