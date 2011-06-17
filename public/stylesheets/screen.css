@@ -662,8 +662,15 @@ body .wrapper #main #container #content h2 {
   font-size: 24px;
   margin-bottom: 0px;
 }
+/* line 250, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #actions {
+  margin: -13px;
+  padding: 0px;
+  display: inline;
+  float: right;
+}
 
-/* line 260, ../../app/stylesheets/screen.scss */
+/* line 266, ../../app/stylesheets/screen.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -671,12 +678,12 @@ body .wrapper #main #container #content h2 {
   margin: 2px 10px;
 }
 
-/* line 267, ../../app/stylesheets/screen.scss */
+/* line 273, ../../app/stylesheets/screen.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 274, ../../app/stylesheets/screen.scss */
+/* line 280, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"],
 .simple_form input[type="password"],
 .simple_form input[type="email"],
@@ -690,7 +697,7 @@ body .wrapper #main #container #content h2 {
   -webkit-border-radius: 5px;
 }
 
-/* line 286, ../../app/stylesheets/screen.scss */
+/* line 292, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"]:focus,
 .simple_form input[type="password"]:focus,
 .simple_form input[type="email"]:focus,
@@ -704,29 +711,29 @@ body .wrapper #main #container #content h2 {
   outline: 1px solid #7c8e46;
 }
 
-/* line 294, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit'] {
   float: right;
 }
 
-/* line 301, ../../app/stylesheets/screen.scss */
+/* line 307, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 305, ../../app/stylesheets/screen.scss */
+/* line 311, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
 
-/* line 310, ../../app/stylesheets/screen.scss */
+/* line 316, ../../app/stylesheets/screen.scss */
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
 
-/* line 315, ../../app/stylesheets/screen.scss */
+/* line 321, ../../app/stylesheets/screen.scss */
 .simple_form .error {
   clear: left;
   margin-left: 120px;
@@ -735,7 +742,7 @@ body .wrapper #main #container #content h2 {
   display: block;
 }
 
-/* line 323, ../../app/stylesheets/screen.scss */
+/* line 329, ../../app/stylesheets/screen.scss */
 .simple_form .hint {
   font-family: 'Arial Black', Gadget, sans-serif;
   clear: left;
@@ -747,17 +754,26 @@ body .wrapper #main #container #content h2 {
   padding-left: 5px;
 }
 
-/* line 334, ../../app/stylesheets/screen.scss */
+/* line 340, ../../app/stylesheets/screen.scss */
 div.ui-datepicker {
   font-size: 12px;
 }
 
-/* line 338, ../../app/stylesheets/screen.scss */
+/* line 344, ../../app/stylesheets/screen.scss */
 #gravatar {
   margin-bottom: 5px;
   padding: 5px;
 }
-/* line 342, ../../app/stylesheets/screen.scss */
+/* line 348, ../../app/stylesheets/screen.scss */
 #gravatar img {
   margin-left: 5px;
+}
+
+/* line 353, ../../app/stylesheets/screen.scss */
+.tooltip {
+  font-size: 12px;
+  height: 70px;
+  width: 160px;
+  padding: 25px;
+  color: #fff;
 }

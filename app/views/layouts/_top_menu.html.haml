@@ -1,9 +1,7 @@
 %ul
+  = link_to('Home', root_path)
   = render 'devise/menu/login_items'
-  - if not user_signed_in?
-    %li
-      = link_to 'Sign in with Facebook', user_omniauth_authorize_path(:facebook)
-  - else
+  - if user_signed_in?
     %li
       = link_to('My Profile', profile_path(current_user.id))
   

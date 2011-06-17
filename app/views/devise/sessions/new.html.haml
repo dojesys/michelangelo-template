@@ -1,0 +1,23 @@
+%h2 Sign in 
+
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+
+  #tabs
+    %ul
+      %li
+        %a{ :href => '#tabs-1'}
+          Sign In
+          
+    #tabs-1
+      #actions
+        = render :partial => "devise/shared/links"
+        
+      = f.input :email
+      = f.input :password
+      
+      - if devise_mapping.rememberable?
+        = f.input :remember_me, :as => :boolean
+
+  = f.submit 'Sign In'
+
+- navigation_add 'Sign In', new_user_registration_path

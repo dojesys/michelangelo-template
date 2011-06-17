@@ -247,6 +247,12 @@ body {
 					
 					
 					#tabs {
+						#actions {
+							margin: -13px;
+							padding: 0px;
+							display: inline;
+							float: right;
+						}
 					}
 					
 				}
@@ -342,4 +348,14 @@ div.ui-datepicker{
 	img {
 		margin-left: 5px;
 	}
+}
+
+.tooltip {
+//	display:none;
+//	background:transparent url(/tools/img/tooltip/black_arrow.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
 }
