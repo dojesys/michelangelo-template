@@ -19,7 +19,8 @@ Feature: Sign up
     And I fill in "Password" with "please"
     And I fill in "Password confirmation" with "please"
     And I press "Sign up"
-    Then I should see "Email is invalid"
+#    Then I should see "Email is invalid"
+    Then I should see "is invalid"
 
   Scenario: User signs up without password
     Given I am not logged in
@@ -28,7 +29,8 @@ Feature: Sign up
     And I fill in "Password" with ""
     And I fill in "Password confirmation" with "please"
     And I press "Sign up"
-    Then I should see "Password can't be blank"
+#    Then I should see "Password can't be blank"
+    Then I should see "can't be blank"
 
   Scenario: User signs up without password confirmation
     Given I am not logged in
@@ -37,7 +39,8 @@ Feature: Sign up
     And I fill in "Password" with "please"
     And I fill in "Password confirmation" with ""
     And I press "Sign up"
-    Then I should see "Password doesn't match confirmation"
+#    Then I should see "Password doesn't match confirmation"
+    Then I should see "doesn't match confirmation"
 
   Scenario: User signs up with password and password confirmation that doesn't match
     Given I am not logged in
@@ -46,4 +49,5 @@ Feature: Sign up
     And I fill in "Password" with "please"
     And I fill in "Password confirmation" with "please1"
     And I press "Sign up"
-    Then I should see "Password doesn't match confirmation"
+#    Then I should see "Password doesn't match confirmation"
+    Then I should see "doesn't match confirmation"

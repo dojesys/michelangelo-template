@@ -33,5 +33,12 @@ Feature: Sign in
 
     Scenario: User signs in successfully with facebook
       Given I am not logged in
-      When I follow "Sign in with Facebook"
+      When I go to the sign in page
+      When I follow "sign_in_facebook"
       Then I should see "Successfully authorized from Facebook account."
+      
+    Scenario: User signs in successfully with open id
+      Given I am not logged in
+      When I go to the sign in page
+      When I follow "sign_in_open_id"
+      Then I should see "Successfully authorized from Open Id account."

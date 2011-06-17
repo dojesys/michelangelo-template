@@ -28,12 +28,7 @@ $(function() {
 	$( "#tabs" ).tabs();
 });
 
-// Accordion
-$(function() {
-	$( "#accordion" ).accordion( { clearStyle: true } );
-});
-
-//button
+// button
 $(function() {
 	$( "input:submit").button();
 });

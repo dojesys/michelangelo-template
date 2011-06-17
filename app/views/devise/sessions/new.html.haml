@@ -1,6 +1,6 @@
 %h2 Sign in 
 
-= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :validate => true) do |f|
 
   #tabs
     %ul
@@ -20,6 +20,6 @@
         %br/          
         = link_to "Forgot your password?", new_password_path(resource_name)
         
-  = f.submit 'Sign In'
+  = f.submit 'Sign in'
 
-- navigation_add 'Sign In', new_user_registration_path
+- navigation_add 'Sign in', new_user_registration_path
