@@ -536,7 +536,7 @@ body .wrapper #toolbar #container #right #search .simple_form input[type="text"]
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   outline: 0 none;
-  background: url("/images/search.gif") no-repeat 4px -2px;
+  background: url("/images/search.gif") no-repeat 0px -3px;
 }
 /* line 208, ../../app/stylesheets/screen.scss */
 body .wrapper #toolbar #container #right #search .simple_form input[type='submit'] {

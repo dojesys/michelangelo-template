@@ -202,7 +202,7 @@ body {
 								width: 220px;
 								@include radius(10px);
 								outline: 0 none;
-								background: url("/images/search.gif") no-repeat 4px -2px;
+								background: url("/images/search.gif") no-repeat 0px -3px;
 							}
 						
 							input[type='submit'] {
