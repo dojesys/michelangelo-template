@@ -3,7 +3,6 @@
 @import "blueprint";
 @import "blueprint/typography";
 
-
 //@import "compass/reset.scss";
 @import "compass/layout.scss";
 
@@ -31,51 +30,159 @@ body {
 			#container {
 				@include container;
 				color: $top-foreground;	
+				font-size: 12px;
+
+				#left {
+					@include column(13);
+
+					#user {
+						border-left: solid 1px $input-background-color;
+						border-right: solid 1px $input-background-color;
+						border-bottom: solid 1px $input-background-color;
+				    background-color: lighten($body-background-color, 15%);
+
+						-webkit-border-bottom-right-radius: 10px;
+						-webkit-border-bottom-left-radius: 10px;
+						-moz-border-radius-bottomright: 10px;
+						-moz-border-radius-bottomleft: 10px;
+						border-bottom-right-radius: 10px;
+						border-bottom-left-radius: 10px;
+						
+						padding-top: 5px;
+						padding-bottom: 5px;
+						padding-left: 10px;
+						height: 25px;
+						font-weight:bold;
+
+						
+						#user-gravatar,
+						#user-display-name,
+						#user-email,
+						#user-inbox
+						{
+							float: left;
+							padding-left: 5px;
+							padding-right: 5px;
+							
+							a {
+								color: #fff;
+								font-weight:bold;
+								text-decoration:none;
+								padding: 2px;
+								margin-left: 5px;
+								background-color: lighten($header-background-color, 10%);
+								@include radius(2px);
+
+
+								&:hover {
+									color: $highlight-color;
+									border: solid 1px $highlight-color;
+									background-color: lighten($body-background-color, 15%);
+								}
+
+							}
+							
+						}
+						
+						#user-gravatar {
+							width: 30px;
+						}
+
+						#user-display-name, 
+						#user-email 
+						{
+							width: 150px;
+							text-align: center;
+						}
+
+						#user-inbox
+						{
+							width: 100px;
+							text-align: center;
+						}
+						
+						#separator {
+							float: left;
+							font-weight:normal;
+							color: $input-background-color;
+						}
+					}
+				}
+				
+				#right {
+					@include column(11, true);					
+				}
+			}
+		}
+		
+		#toolbar {
+			background-color: $navigation-background;
+			
+			#container {
+				@include container;
+				color: $navigation-foreground;	
 				font-size: 11px;
 				
 				#left {
-					@include column(17);
-					
-					#top-menu {
+					@include column(16);
+
+					#menu {
 
 						ul {
-							margin:0;
 							padding:0;
 							display:block;
-							list-style-type:none;						
-						
+							list-style-type:none;
 						}
+						
 
 						a {
-							border-right: dashed 1px;
+							-webkit-border-top-right-radius: 5px;
+							-webkit-border-top-left-radius: 5px;
+							-moz-border-radius-topright: 5px;
+							-moz-border-radius-topleft: 5px;
+							border-top-right-radius: 5px;
+							border-top-left-radius: 5px;
+							border-left: solid 1px lighten($header-background-color, 10%);
+							border-right: solid 1px lighten($header-background-color, 10%);
+							border-top: solid 1px lighten($header-background-color, 10%);
 
-							margin-top: 10px;
-							margin-bottom: 2px;
+							background-color: lighten($header-background-color, 10%);
+							
+							margin-top: 0px;
+							margin-bottom: 0px;
+							margin-left: 2px;
 
-							padding-top: 0px;
-							padding-bottom: 0px;
+							padding-top: 2px;
+							padding-bottom: 2px;
 
 							padding-left: 5px;
 							padding-right: 5px;
 
-							color: $top-foreground;
+							color: #fff;
 							font-weight:bold;
 							text-decoration:none;
 							display:block;
+							width: auto;
+
 							float:left;
-							
+
 							&:hover {
 								color: $highlight-color;
-								border-right: dashed 1px;
+								background-color: lighten($body-background-color, 15%);
+								border-left: solid 1px $highlight-color;
+								border-right: solid 1px $highlight-color;
+								border-top: solid 1px $highlight-color;
+						    
 							}
-							
+
 						}
 					}				
+					
+					
 				}
 				
 				#right {
-					@include column(7, true);
-			    margin-top: 5px;
+					@include column(8, true);
 					
 					#search {
 						margin: 0px;
@@ -83,18 +190,19 @@ body {
 
 						.simple_form {
 							
-							input[type="text"], {
+							input[type="text"] {
 								display: inline;
 								margin-bottom: 7px;
 								margin-left: 0px;
 								margin-right: 0px;
 								padding-top: 3px;
 								padding-bottom: 3px;
-								padding-left: 10px;
-								padding-right: 10px;
-								width: 180px;
+								padding-left: 30px;
+								padding-right: 30px;
+								width: 220px;
 								@include radius(10px);
 								outline: 0 none;
+								background: url("/images/search.gif") no-repeat 4px -2px;
 							}
 						
 							input[type='submit'] {
@@ -104,6 +212,14 @@ body {
 								font-size: 10px;
 								@include radius(10px);	
 								outline: 0 none;
+							}
+	
+							input[type="text"]:focus {
+									background-color: $input-focus-background-color;
+									color: $input-foreground-color;
+							    border: solid 1px darkten($body-background-color, 15%); 
+									@include radius(5px);
+									outline: 1px solid $highlight-color;
 							}
 	
 						}
@@ -347,7 +463,7 @@ div.ui-datepicker{
  font-size:	12px;
 }
 
-#gravatar {
+#gravatar-form {
   margin-bottom: 5px;
   padding: 5px;	
 	

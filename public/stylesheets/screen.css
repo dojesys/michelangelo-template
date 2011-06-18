@@ -57,12 +57,12 @@ a img {
   border: none;
 }
 
-/* line 11, ../../app/stylesheets/screen.scss */
+/* line 10, ../../app/stylesheets/screen.scss */
 body, html {
   height: 100%;
 }
 
-/* line 15, ../../app/stylesheets/screen.scss */
+/* line 14, ../../app/stylesheets/screen.scss */
 body {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -329,17 +329,124 @@ body #footer {
   position: relative;
   height: 145px;
 }
-/* line 24, ../../app/stylesheets/screen.scss */
+/* line 23, ../../app/stylesheets/screen.scss */
 body .wrapper {
   height: 100%;
   min-height: 100%;
 }
-/* line 28, ../../app/stylesheets/screen.scss */
+/* line 27, ../../app/stylesheets/screen.scss */
 body .wrapper #top {
   background-color: white;
 }
-/* line 31, ../../app/stylesheets/screen.scss */
+/* line 30, ../../app/stylesheets/screen.scss */
 body .wrapper #top #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  color: black;
+  font-size: 12px;
+}
+/* line 35, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 510px;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body .wrapper #top #container #left {
+  overflow-x: hidden;
+}
+/* line 38, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user {
+  border-left: solid 1px #cccccc;
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  background-color: #f2f2f2;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  height: 25px;
+  font-weight: bold;
+}
+/* line 62, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #user-gravatar,
+body .wrapper #top #container #left #user #user-display-name,
+body .wrapper #top #container #left #user #user-email,
+body .wrapper #top #container #left #user #user-inbox {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 67, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #user-gravatar a,
+body .wrapper #top #container #left #user #user-display-name a,
+body .wrapper #top #container #left #user #user-email a,
+body .wrapper #top #container #left #user #user-inbox a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px;
+  margin-left: 5px;
+  background-color: #4d4d4d;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+/* line 77, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #user-gravatar a:hover,
+body .wrapper #top #container #left #user #user-display-name a:hover,
+body .wrapper #top #container #left #user #user-email a:hover,
+body .wrapper #top #container #left #user #user-inbox a:hover {
+  color: #7c8e46;
+  border: solid 1px #7c8e46;
+  background-color: #f2f2f2;
+}
+/* line 87, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #user-gravatar {
+  width: 30px;
+}
+/* line 93, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #user-display-name,
+body .wrapper #top #container #left #user #user-email {
+  width: 150px;
+  text-align: center;
+}
+/* line 99, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #user-inbox {
+  width: 100px;
+  text-align: center;
+}
+/* line 104, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #left #user #separator {
+  float: left;
+  font-weight: normal;
+  color: #cccccc;
+}
+/* line 112, ../../app/stylesheets/screen.scss */
+body .wrapper #top #container #right {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 430px;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body .wrapper #top #container #right {
+  overflow-x: hidden;
+}
+/* line 118, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar {
+  background-color: white;
+}
+/* line 121, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
@@ -347,79 +454,92 @@ body .wrapper #top #container {
   color: black;
   font-size: 11px;
 }
-/* line 36, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #left {
+/* line 126, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #left {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 670px;
+  width: 630px;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body .wrapper #top #container #left {
+* html body .wrapper #toolbar #container #left {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #left #top-menu ul {
-  margin: 0;
+/* line 131, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #left #menu ul {
   padding: 0;
   display: block;
   list-style-type: none;
 }
-/* line 49, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #left #top-menu a {
-  border-right: dashed 1px;
-  margin-top: 10px;
-  margin-bottom: 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+/* line 138, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #left #menu a {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-left: solid 1px #4d4d4d;
+  border-right: solid 1px #4d4d4d;
+  border-top: solid 1px #4d4d4d;
+  background-color: #4d4d4d;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
-  color: black;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   display: block;
+  width: auto;
   float: left;
 }
-/* line 67, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #left #top-menu a:hover {
+/* line 169, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #left #menu a:hover {
   color: #7c8e46;
-  border-right: dashed 1px;
+  background-color: #f2f2f2;
+  border-left: solid 1px #7c8e46;
+  border-right: solid 1px #7c8e46;
+  border-top: solid 1px #7c8e46;
 }
-/* line 76, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #right {
+/* line 184, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #right {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 270px;
-  margin-top: 5px;
+  width: 310px;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body .wrapper #top #container #right {
+* html body .wrapper #toolbar #container #right {
   overflow-x: hidden;
 }
-/* line 80, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #right #search {
+/* line 187, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #right #search {
   margin: 0px;
   padding: 0px;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #right #search .simple_form input[type="text"] {
+/* line 193, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #right #search .simple_form input[type="text"] {
   display: inline;
   margin-bottom: 7px;
   margin-left: 0px;
   margin-right: 0px;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 180px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 220px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   outline: 0 none;
+  background: url("/images/search.gif") no-repeat 4px -2px;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
-body .wrapper #top #container #right #search .simple_form input[type='submit'] {
+/* line 208, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #right #search .simple_form input[type='submit'] {
   display: inline;
   margin-top: -28px;
   height: 21px;
@@ -429,22 +549,32 @@ body .wrapper #top #container #right #search .simple_form input[type='submit'] {
   -webkit-border-radius: 10px;
   outline: 0 none;
 }
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 217, ../../app/stylesheets/screen.scss */
+body .wrapper #toolbar #container #right #search .simple_form input[type="text"]:focus {
+  background-color: #efefe3;
+  color: black;
+  border: solid 1px darkten(#cccccc, 15%);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  outline: 1px solid #7c8e46;
+}
+/* line 232, ../../app/stylesheets/screen.scss */
 body .wrapper #header {
   background-color: #333333;
   background-image: url("/images/header-bg.jpg");
-  height: 75px;
+  height: 55px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 123, ../../app/stylesheets/screen.scss */
+/* line 239, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 242, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container #left {
   display: inline;
   float: left;
@@ -455,13 +585,13 @@ body .wrapper #header #container #left {
 * html body .wrapper #header #container #left {
   overflow-x: hidden;
 }
-/* line 131, ../../app/stylesheets/screen.scss */
+/* line 247, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container #left #logo h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
   padding-top: 10px;
   color: white;
 }
-/* line 139, ../../app/stylesheets/screen.scss */
+/* line 255, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container #right {
   display: inline;
   float: left;
@@ -472,11 +602,11 @@ body .wrapper #header #container #right {
 * html body .wrapper #header #container #right {
   overflow-x: hidden;
 }
-/* line 147, ../../app/stylesheets/screen.scss */
+/* line 263, ../../app/stylesheets/screen.scss */
 body .wrapper #breadcrumbs {
   background-color: white;
 }
-/* line 150, ../../app/stylesheets/screen.scss */
+/* line 266, ../../app/stylesheets/screen.scss */
 body .wrapper #breadcrumbs #container {
   width: 950px;
   margin: 0 auto;
@@ -485,7 +615,7 @@ body .wrapper #breadcrumbs #container {
   font-size: 11px;
   color: black;
 }
-/* line 155, ../../app/stylesheets/screen.scss */
+/* line 271, ../../app/stylesheets/screen.scss */
 body .wrapper #breadcrumbs #container a {
   color: #7c8e46;
   text-decoration: none;
@@ -493,12 +623,12 @@ body .wrapper #breadcrumbs #container a {
   padding-bottom: 1px;
   padding-right: 3px;
 }
-/* line 166, ../../app/stylesheets/screen.scss */
+/* line 282, ../../app/stylesheets/screen.scss */
 body .wrapper #footer {
   background-color: #333333;
   background-image: url("/images/header-bg.jpg");
 }
-/* line 171, ../../app/stylesheets/screen.scss */
+/* line 287, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container {
   width: 950px;
   margin: 0 auto;
@@ -507,14 +637,14 @@ body .wrapper #footer #container {
   padding-top: 10px;
   height: 135px;
 }
-/* line 176, ../../app/stylesheets/screen.scss */
+/* line 292, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
   font-size: 18px;
   color: white;
   padding-left: 10px;
 }
-/* line 183, ../../app/stylesheets/screen.scss */
+/* line 299, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #left {
   display: inline;
   float: left;
@@ -525,7 +655,7 @@ body .wrapper #footer #container #left {
 * html body .wrapper #footer #container #left {
   overflow-x: hidden;
 }
-/* line 185, ../../app/stylesheets/screen.scss */
+/* line 301, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #left #menu {
   height: 135px;
   background-color: #4d4d4d;
@@ -534,12 +664,12 @@ body .wrapper #footer #container #left #menu {
   -webkit-border-radius: 10px;
   font-size: 11px;
 }
-/* line 50, ../../app/stylesheets/partials/_base.scss */
+/* line 53, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 55, ../../app/stylesheets/partials/_base.scss */
+/* line 58, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu a {
   color: #fff;
   text-decoration: none;
@@ -547,11 +677,11 @@ body .wrapper #footer #container #left #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #4d4d4d;
 }
-/* line 62, ../../app/stylesheets/partials/_base.scss */
+/* line 65, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu a:hover {
   color: #7c8e46;
 }
-/* line 190, ../../app/stylesheets/screen.scss */
+/* line 306, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #middle {
   display: inline;
   float: left;
@@ -562,7 +692,7 @@ body .wrapper #footer #container #middle {
 * html body .wrapper #footer #container #middle {
   overflow-x: hidden;
 }
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 309, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #middle #menu {
   height: 135px;
   background-color: #4d4d4d;
@@ -571,12 +701,12 @@ body .wrapper #footer #container #middle #menu {
   -webkit-border-radius: 10px;
   font-size: 11px;
 }
-/* line 50, ../../app/stylesheets/partials/_base.scss */
+/* line 53, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 55, ../../app/stylesheets/partials/_base.scss */
+/* line 58, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu a {
   color: #fff;
   text-decoration: none;
@@ -584,11 +714,11 @@ body .wrapper #footer #container #middle #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #4d4d4d;
 }
-/* line 62, ../../app/stylesheets/partials/_base.scss */
+/* line 65, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu a:hover {
   color: #7c8e46;
 }
-/* line 198, ../../app/stylesheets/screen.scss */
+/* line 314, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #right {
   display: inline;
   float: left;
@@ -599,7 +729,7 @@ body .wrapper #footer #container #right {
 * html body .wrapper #footer #container #right {
   overflow-x: hidden;
 }
-/* line 201, ../../app/stylesheets/screen.scss */
+/* line 317, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #right #menu {
   height: 135px;
   background-color: #4d4d4d;
@@ -608,12 +738,12 @@ body .wrapper #footer #container #right #menu {
   -webkit-border-radius: 10px;
   font-size: 11px;
 }
-/* line 50, ../../app/stylesheets/partials/_base.scss */
+/* line 53, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 55, ../../app/stylesheets/partials/_base.scss */
+/* line 58, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu a {
   color: #fff;
   text-decoration: none;
@@ -621,11 +751,11 @@ body .wrapper #footer #container #right #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #4d4d4d;
 }
-/* line 62, ../../app/stylesheets/partials/_base.scss */
+/* line 65, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu a:hover {
   color: #7c8e46;
 }
-/* line 212, ../../app/stylesheets/screen.scss */
+/* line 328, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container {
   width: 950px;
   margin: 0 auto;
@@ -635,7 +765,7 @@ body .wrapper #main #container {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-/* line 221, ../../app/stylesheets/screen.scss */
+/* line 337, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #flash {
   display: none;
   margin: 15px;
@@ -646,30 +776,30 @@ body .wrapper #main #container #flash {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-/* line 229, ../../app/stylesheets/screen.scss */
+/* line 345, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #flash #flash_notice {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
 }
-/* line 235, ../../app/stylesheets/screen.scss */
+/* line 351, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #flash #flash_alert {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   color: yellow;
 }
-/* line 245, ../../app/stylesheets/screen.scss */
+/* line 361, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
 }
-/* line 249, ../../app/stylesheets/screen.scss */
+/* line 365, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content h2 {
   font-family: 'Arial Black', Gadget, sans-serif;
   font-size: 24px;
   margin-bottom: 0px;
 }
-/* line 257, ../../app/stylesheets/screen.scss */
+/* line 373, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content #tabs #actions {
   margin: -13px;
   padding: 0px;
@@ -677,7 +807,7 @@ body .wrapper #main #container #content #tabs #actions {
   float: right;
 }
 
-/* line 273, ../../app/stylesheets/screen.scss */
+/* line 389, ../../app/stylesheets/screen.scss */
 .simple_form label {
   float: left;
   width: 100px;
@@ -685,12 +815,12 @@ body .wrapper #main #container #content #tabs #actions {
   margin: 2px 10px;
 }
 
-/* line 280, ../../app/stylesheets/screen.scss */
+/* line 396, ../../app/stylesheets/screen.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 287, ../../app/stylesheets/screen.scss */
+/* line 403, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"],
 .simple_form input[type="password"],
 .simple_form input[type="email"],
@@ -704,7 +834,7 @@ body .wrapper #main #container #content #tabs #actions {
   -webkit-border-radius: 5px;
 }
 
-/* line 298, ../../app/stylesheets/screen.scss */
+/* line 414, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"]:focus,
 .simple_form input[type="password"]:focus,
 .simple_form input[type="email"]:focus,
@@ -718,29 +848,29 @@ body .wrapper #main #container #content #tabs #actions {
   outline: 1px solid #7c8e46;
 }
 
-/* line 306, ../../app/stylesheets/screen.scss */
+/* line 422, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit'] {
   float: right;
 }
 
-/* line 313, ../../app/stylesheets/screen.scss */
+/* line 429, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 317, ../../app/stylesheets/screen.scss */
+/* line 433, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
 
-/* line 322, ../../app/stylesheets/screen.scss */
+/* line 438, ../../app/stylesheets/screen.scss */
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
 
-/* line 327, ../../app/stylesheets/screen.scss */
+/* line 443, ../../app/stylesheets/screen.scss */
 .simple_form .error {
   clear: left;
   margin-left: 120px;
@@ -749,7 +879,7 @@ body .wrapper #main #container #content #tabs #actions {
   display: block;
 }
 
-/* line 335, ../../app/stylesheets/screen.scss */
+/* line 451, ../../app/stylesheets/screen.scss */
 .simple_form .hint {
   font-family: 'Arial Black', Gadget, sans-serif;
   clear: left;
@@ -761,17 +891,17 @@ body .wrapper #main #container #content #tabs #actions {
   padding-left: 5px;
 }
 
-/* line 346, ../../app/stylesheets/screen.scss */
+/* line 462, ../../app/stylesheets/screen.scss */
 div.ui-datepicker {
   font-size: 12px;
 }
 
-/* line 350, ../../app/stylesheets/screen.scss */
-#gravatar {
+/* line 466, ../../app/stylesheets/screen.scss */
+#gravatar-form {
   margin-bottom: 5px;
   padding: 5px;
 }
-/* line 354, ../../app/stylesheets/screen.scss */
-#gravatar img {
+/* line 470, ../../app/stylesheets/screen.scss */
+#gravatar-form img {
   margin-left: 5px;
 }

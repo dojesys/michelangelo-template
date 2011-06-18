@@ -9,7 +9,7 @@
           Connections
     #tabs-1  
       = f.label 'Your Gravatar'
-      #gravatar
+      #gravatar-form
         = image_tag current_user.gravatar_url(:size => 120)
     
       = f.input :display_name, :hint => 'Your Real Name'

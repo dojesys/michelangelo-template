@@ -33,6 +33,7 @@ $(function() {
 	$( "input:submit").button();
 });
 
+// Tooltips
 $(function() {
 	$('img[title]').qtip({
 		position: {
@@ -43,4 +44,15 @@ $(function() {
 			classes: 'ui-tooltip-shadow ui-tooltip-dark'
 		}
 	});
+});
+
+// User Box
+$(function() {
+	if ($('#user').html().trim()) {
+			$('#user').show();
+	  }
+	  else
+	  {
+			$('#user').hide();
+	  }	
 });
