@@ -1,5 +1,6 @@
 MichelangeloTemplate::Application.routes.draw do
-
+ filter :locale, :pagination, :uuid
+ 
   get "profile/:id" => "profiles#edit", :as => :profile
   
   put "profile/:id" => "profiles#update"

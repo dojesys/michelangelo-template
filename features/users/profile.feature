@@ -14,5 +14,6 @@ Feature: User Profiles
     And I fill in "Location" with "Right Here"
     And I fill in "Website" with "http://cool.i.am"
     And I fill in "Birthday" with "01/01/2000"
+    And I choose "English"
     And I press "Update Profile"
     Then I should see "Successfully updated profile."

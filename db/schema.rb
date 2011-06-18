@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20110613040139) do
     t.string   "location"
     t.string   "website"
     t.date     "birthday"
+    t.string   "locale",       :default => "en", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -8,6 +8,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.string :location
       t.string :website
       t.date :birthday
+      t.string :locale, :default => 'en', :null => false
       t.timestamps
     end
   end

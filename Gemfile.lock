@@ -102,12 +102,12 @@ GEM
     guard-cucumber (0.5.0)
       cucumber (>= 0.10)
       guard (>= 0.4.0)
-    guard-haml (0.2.0)
-      guard (~> 0.3)
-      haml (~> 3.0)
+    guard-haml (0.3.0)
+      guard (>= 0.4)
+      haml (>= 3.0)
     guard-rspec (0.4.0)
       guard (>= 0.4.0)
-    guard-sass (0.2.0)
+    guard-sass (0.2.1)
       guard (>= 0.2.1)
       sass (>= 3.1)
     guard-spork (0.2.0)
@@ -187,6 +187,8 @@ GEM
       thor (~> 0.14.4)
     rake (0.8.7)
     rb-fsevent (0.4.0)
+    routing-filter (0.2.3)
+      actionpack
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -263,6 +265,7 @@ DEPENDENCIES
   rails (= 3.0.8)
   rake (= 0.8.7)
   rb-fsevent
+  routing-filter
   rspec-rails
   settingslogic
   simple_form

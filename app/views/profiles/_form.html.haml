@@ -21,6 +21,7 @@
         = f.input :birthday, :as => :string, :input_html => { :value => l(@profile.birthday) }
       - else
         = f.input :birthday, :as => :string
+      = f.input :locale, :as => :select, :collection => Profile::LOCALES 
     #tabs-2
       %p=t(:connections)
       
