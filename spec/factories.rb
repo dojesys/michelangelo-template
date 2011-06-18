@@ -12,5 +12,4 @@ Factory.define :profile do |p|
   p.location 'Right Here'
   p.website 'http://cool.i.am'
   p.birthday 30.years.ago
-  p.picture 'http://www.flickr.com/photos/user/1234567890'
 end

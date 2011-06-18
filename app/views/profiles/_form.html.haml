@@ -3,26 +3,25 @@
     %ul
       %li
         %a{ :href => '#tabs-1'}
-          General
+          = t(:general)
       %li
         %a{ :href => '#tabs-2'}
-          Connections
+          = t(:connections)
     #tabs-1  
-      = f.label 'Your Gravatar'
+      = f.label t(:gravatar)
       #gravatar-form
         = image_tag current_user.gravatar_url(:size => 120)
     
-      = f.input :display_name, :hint => 'Your Real Name'
-      = f.input :about, :hint => 'Something About You', :input_html => { :rows => '2' }
-      = f.input :gender, :as => :radio, :collection => { "Male" => 0, "Female" => 1 }
-      = f.input :location, :hint => 'Where in the world are you?'
-      = f.input :website, :hint => 'Do you have a website or blog?'
+      = f.input :display_name
+      = f.input :about, :input_html => { :rows => '2' }
+      = f.input :gender, :as => :radio, :collection => { t(:male) => 0, t(:female) => 1 }
+      = f.input :location
+      = f.input :website
       - if @profile.birthday
         = f.input :birthday, :as => :string, :input_html => { :value => l(@profile.birthday) }
       - else
         = f.input :birthday, :as => :string
     #tabs-2
-      %p
-        Conections
+      %p=t(:connections)
       
   = f.button :submit

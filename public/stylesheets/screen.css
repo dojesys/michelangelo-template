@@ -511,17 +511,18 @@ body .wrapper #toolbar #container #right {
   float: left;
   margin-right: 0;
   width: 310px;
+  margin-top: 5px;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body .wrapper #toolbar #container #right {
   overflow-x: hidden;
 }
-/* line 187, ../../app/stylesheets/screen.scss */
+/* line 188, ../../app/stylesheets/screen.scss */
 body .wrapper #toolbar #container #right #search {
   margin: 0px;
   padding: 0px;
 }
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 194, ../../app/stylesheets/screen.scss */
 body .wrapper #toolbar #container #right #search .simple_form input[type="text"] {
   display: inline;
   margin-bottom: 7px;
@@ -538,7 +539,7 @@ body .wrapper #toolbar #container #right #search .simple_form input[type="text"]
   outline: 0 none;
   background: url("/images/search.gif") no-repeat 0px -3px;
 }
-/* line 208, ../../app/stylesheets/screen.scss */
+/* line 209, ../../app/stylesheets/screen.scss */
 body .wrapper #toolbar #container #right #search .simple_form input[type='submit'] {
   display: inline;
   margin-top: -28px;
@@ -549,7 +550,7 @@ body .wrapper #toolbar #container #right #search .simple_form input[type='submit
   -webkit-border-radius: 10px;
   outline: 0 none;
 }
-/* line 217, ../../app/stylesheets/screen.scss */
+/* line 218, ../../app/stylesheets/screen.scss */
 body .wrapper #toolbar #container #right #search .simple_form input[type="text"]:focus {
   background-color: #efefe3;
   color: black;
@@ -559,7 +560,7 @@ body .wrapper #toolbar #container #right #search .simple_form input[type="text"]
   -webkit-border-radius: 5px;
   outline: 1px solid #7c8e46;
 }
-/* line 232, ../../app/stylesheets/screen.scss */
+/* line 233, ../../app/stylesheets/screen.scss */
 body .wrapper #header {
   background-color: #333333;
   background-image: url("/images/header-bg.jpg");
@@ -567,14 +568,14 @@ body .wrapper #header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 239, ../../app/stylesheets/screen.scss */
+/* line 240, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 242, ../../app/stylesheets/screen.scss */
+/* line 243, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container #left {
   display: inline;
   float: left;
@@ -585,13 +586,13 @@ body .wrapper #header #container #left {
 * html body .wrapper #header #container #left {
   overflow-x: hidden;
 }
-/* line 247, ../../app/stylesheets/screen.scss */
+/* line 248, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container #left #logo h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
   padding-top: 10px;
   color: white;
 }
-/* line 255, ../../app/stylesheets/screen.scss */
+/* line 256, ../../app/stylesheets/screen.scss */
 body .wrapper #header #container #right {
   display: inline;
   float: left;
@@ -602,11 +603,11 @@ body .wrapper #header #container #right {
 * html body .wrapper #header #container #right {
   overflow-x: hidden;
 }
-/* line 263, ../../app/stylesheets/screen.scss */
+/* line 264, ../../app/stylesheets/screen.scss */
 body .wrapper #breadcrumbs {
   background-color: white;
 }
-/* line 266, ../../app/stylesheets/screen.scss */
+/* line 267, ../../app/stylesheets/screen.scss */
 body .wrapper #breadcrumbs #container {
   width: 950px;
   margin: 0 auto;
@@ -615,7 +616,7 @@ body .wrapper #breadcrumbs #container {
   font-size: 11px;
   color: black;
 }
-/* line 271, ../../app/stylesheets/screen.scss */
+/* line 272, ../../app/stylesheets/screen.scss */
 body .wrapper #breadcrumbs #container a {
   color: #7c8e46;
   text-decoration: none;
@@ -623,12 +624,12 @@ body .wrapper #breadcrumbs #container a {
   padding-bottom: 1px;
   padding-right: 3px;
 }
-/* line 282, ../../app/stylesheets/screen.scss */
+/* line 283, ../../app/stylesheets/screen.scss */
 body .wrapper #footer {
   background-color: #333333;
   background-image: url("/images/header-bg.jpg");
 }
-/* line 287, ../../app/stylesheets/screen.scss */
+/* line 288, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container {
   width: 950px;
   margin: 0 auto;
@@ -637,14 +638,14 @@ body .wrapper #footer #container {
   padding-top: 10px;
   height: 135px;
 }
-/* line 292, ../../app/stylesheets/screen.scss */
+/* line 293, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
   font-size: 18px;
   color: white;
   padding-left: 10px;
 }
-/* line 299, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #left {
   display: inline;
   float: left;
@@ -655,7 +656,7 @@ body .wrapper #footer #container #left {
 * html body .wrapper #footer #container #left {
   overflow-x: hidden;
 }
-/* line 301, ../../app/stylesheets/screen.scss */
+/* line 302, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #left #menu {
   height: 135px;
   background-color: #4d4d4d;
@@ -664,12 +665,12 @@ body .wrapper #footer #container #left #menu {
   -webkit-border-radius: 10px;
   font-size: 11px;
 }
-/* line 53, ../../app/stylesheets/partials/_base.scss */
+/* line 59, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 58, ../../app/stylesheets/partials/_base.scss */
+/* line 64, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu a {
   color: #fff;
   text-decoration: none;
@@ -677,11 +678,11 @@ body .wrapper #footer #container #left #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #4d4d4d;
 }
-/* line 65, ../../app/stylesheets/partials/_base.scss */
+/* line 71, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #left #menu a:hover {
   color: #7c8e46;
 }
-/* line 306, ../../app/stylesheets/screen.scss */
+/* line 307, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #middle {
   display: inline;
   float: left;
@@ -692,7 +693,7 @@ body .wrapper #footer #container #middle {
 * html body .wrapper #footer #container #middle {
   overflow-x: hidden;
 }
-/* line 309, ../../app/stylesheets/screen.scss */
+/* line 310, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #middle #menu {
   height: 135px;
   background-color: #4d4d4d;
@@ -701,12 +702,12 @@ body .wrapper #footer #container #middle #menu {
   -webkit-border-radius: 10px;
   font-size: 11px;
 }
-/* line 53, ../../app/stylesheets/partials/_base.scss */
+/* line 59, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 58, ../../app/stylesheets/partials/_base.scss */
+/* line 64, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu a {
   color: #fff;
   text-decoration: none;
@@ -714,11 +715,11 @@ body .wrapper #footer #container #middle #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #4d4d4d;
 }
-/* line 65, ../../app/stylesheets/partials/_base.scss */
+/* line 71, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #middle #menu a:hover {
   color: #7c8e46;
 }
-/* line 314, ../../app/stylesheets/screen.scss */
+/* line 315, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #right {
   display: inline;
   float: left;
@@ -729,7 +730,7 @@ body .wrapper #footer #container #right {
 * html body .wrapper #footer #container #right {
   overflow-x: hidden;
 }
-/* line 317, ../../app/stylesheets/screen.scss */
+/* line 318, ../../app/stylesheets/screen.scss */
 body .wrapper #footer #container #right #menu {
   height: 135px;
   background-color: #4d4d4d;
@@ -738,12 +739,12 @@ body .wrapper #footer #container #right #menu {
   -webkit-border-radius: 10px;
   font-size: 11px;
 }
-/* line 53, ../../app/stylesheets/partials/_base.scss */
+/* line 59, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu ul {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 58, ../../app/stylesheets/partials/_base.scss */
+/* line 64, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu a {
   color: #fff;
   text-decoration: none;
@@ -751,11 +752,11 @@ body .wrapper #footer #container #right #menu a {
   padding: 3px 10px;
   border-bottom: dotted 1px #4d4d4d;
 }
-/* line 65, ../../app/stylesheets/partials/_base.scss */
+/* line 71, ../../app/stylesheets/partials/_base.scss */
 body .wrapper #footer #container #right #menu a:hover {
   color: #7c8e46;
 }
-/* line 328, ../../app/stylesheets/screen.scss */
+/* line 329, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container {
   width: 950px;
   margin: 0 auto;
@@ -765,41 +766,41 @@ body .wrapper #main #container {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-/* line 337, ../../app/stylesheets/screen.scss */
+/* line 338, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #flash {
   display: none;
   margin: 15px;
-  background-color: #333333;
+  background-color: #f2f2f2;
   border: solid 1px #7c8e46;
   color: #7c8e46;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-/* line 345, ../../app/stylesheets/screen.scss */
+/* line 346, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #flash #flash_notice {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
 }
-/* line 351, ../../app/stylesheets/screen.scss */
+/* line 352, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #flash #flash_alert {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   color: yellow;
 }
-/* line 361, ../../app/stylesheets/screen.scss */
+/* line 362, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content h1 {
   font-family: 'Arial Black', Gadget, sans-serif;
 }
-/* line 365, ../../app/stylesheets/screen.scss */
+/* line 366, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content h2 {
   font-family: 'Arial Black', Gadget, sans-serif;
   font-size: 24px;
   margin-bottom: 0px;
 }
-/* line 373, ../../app/stylesheets/screen.scss */
+/* line 374, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content #tabs #actions {
   margin: -13px;
   padding: 0px;
@@ -807,20 +808,21 @@ body .wrapper #main #container #content #tabs #actions {
   float: right;
 }
 
-/* line 389, ../../app/stylesheets/screen.scss */
+/* line 390, ../../app/stylesheets/screen.scss */
 .simple_form label {
   float: left;
-  width: 100px;
+  width: 120px;
   text-align: right;
-  margin: 2px 10px;
+  margin: 5px 5px;
+  font-size: 11px;
 }
 
-/* line 396, ../../app/stylesheets/screen.scss */
+/* line 398, ../../app/stylesheets/screen.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 403, ../../app/stylesheets/screen.scss */
+/* line 405, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"],
 .simple_form input[type="password"],
 .simple_form input[type="email"],
@@ -834,7 +836,7 @@ body .wrapper #main #container #content #tabs #actions {
   -webkit-border-radius: 5px;
 }
 
-/* line 414, ../../app/stylesheets/screen.scss */
+/* line 416, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"]:focus,
 .simple_form input[type="password"]:focus,
 .simple_form input[type="email"]:focus,
@@ -848,29 +850,29 @@ body .wrapper #main #container #content #tabs #actions {
   outline: 1px solid #7c8e46;
 }
 
-/* line 422, ../../app/stylesheets/screen.scss */
+/* line 424, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit'] {
   float: right;
 }
 
-/* line 429, ../../app/stylesheets/screen.scss */
+/* line 431, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 433, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
 
-/* line 438, ../../app/stylesheets/screen.scss */
+/* line 440, ../../app/stylesheets/screen.scss */
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
 
-/* line 443, ../../app/stylesheets/screen.scss */
+/* line 445, ../../app/stylesheets/screen.scss */
 .simple_form .error {
   clear: left;
   margin-left: 120px;
@@ -879,29 +881,38 @@ body .wrapper #main #container #content #tabs #actions {
   display: block;
 }
 
-/* line 451, ../../app/stylesheets/screen.scss */
+/* line 453, ../../app/stylesheets/screen.scss */
 .simple_form .hint {
-  font-family: 'Arial Black', Gadget, sans-serif;
   clear: left;
-  margin-left: 120px;
+  margin-left: 130px;
   font-size: 10px;
   color: #7c8e46;
   display: block;
   font-style: italic;
   padding-left: 5px;
+  padding-top: 0px;
 }
 
-/* line 462, ../../app/stylesheets/screen.scss */
+/* line 464, ../../app/stylesheets/screen.scss */
+.simple_form a {
+  text-decoration: none;
+}
+/* line 467, ../../app/stylesheets/screen.scss */
+.simple_form a:hover {
+  color: #7c8e46;
+}
+
+/* line 473, ../../app/stylesheets/screen.scss */
 div.ui-datepicker {
   font-size: 12px;
 }
 
-/* line 466, ../../app/stylesheets/screen.scss */
+/* line 477, ../../app/stylesheets/screen.scss */
 #gravatar-form {
   margin-bottom: 5px;
   padding: 5px;
 }
-/* line 470, ../../app/stylesheets/screen.scss */
+/* line 481, ../../app/stylesheets/screen.scss */
 #gravatar-form img {
   margin-left: 5px;
 }

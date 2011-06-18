@@ -7,7 +7,7 @@ Feature: User Profiles
     Given I am a user with an email "user@test.com" and password "please"
     When I sign in as "user@test.com/please"
     Then I should be signed in
-    When I follow "Profile"
+    When I follow "My profile"
     And I fill in "Display name" with "User Name"
     And I fill in "About" with "I'm a cool User"
     And I choose "Male"

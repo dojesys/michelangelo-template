@@ -4,4 +4,19 @@
 en:
   date:
     formats:
-      default: "%d/%m/%Y"
+      default: "%m/%d/%Y"
+
+  helpers:
+    submit:
+
+  gravatar: 'Gravatar'
+  sign_in:  'Sign in'
+  sign_in_with: 'Sign in with'
+  sign_up:  'Sign up'
+  profile:  'My profile'
+  forgot_your_password: 'Forgot your password?'
+  cancel_my_account: 'Cancel my account'
+  are_you_sure: 'Are you sure?'
+  unhappy: 'Unhappy?'
+  edit_account_password: 'leave blank if you dont want to change it'
+  search_button:  'Search'

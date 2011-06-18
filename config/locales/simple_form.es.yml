@@ -1,0 +1,22 @@
+es:
+  simple_form:
+    "yes": 'Si'
+    "no": 'No'
+    labels:
+      email:  'Correo'
+      password: 'Contraseña'
+      remember_me: 'Recuérdame'
+      password_confirmation: 'Confirmación'
+      current_password: 'Contraseña actual'
+      display_name: 'Nombre a visualizar'
+      about:  'Acerca de ti'
+      gender: 'Sexo'
+      location: 'Ubicación'
+      website:  'Sitio web'
+      birthday: 'Fecha de nacimiento'
+    hints:
+      current_password: 'Necesitamos tu contraseña actual para confirmar los cambios'
+      about: 'Cuéntanos algo sobre ti'
+      display_name: 'Tu nombre real'
+      location: '¿En que parte del mundo estás?'
+      website: '¿Tiene un sitio web o blog?'

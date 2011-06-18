@@ -9,10 +9,17 @@ $header-height: 55px;
 $footer-height: 145px;
 
 // Colors
+$input-focus-background-color: #EFEFE3;
+$input-background-color: #F2F2F2;
+$input-border-color: #ccc;
+$input-foreground-color: #000;
+
+$highlight-color: #7C8E46;	
+
 $header-background-color: #333333;
 $footer-background-color: #333333;
 $body-background-color: #CCCCCC;
-$flash-background-color: #333333;
+$flash-background-color: #F2F2F2;
 $breadcrumbs-background: #ffffff;
 $breadcrumbs-foreground: #000;
 $top-background: #ffffff;
@@ -24,14 +31,13 @@ $navigation-foreground: #000;
 $header-titles-color: #fff;
 $footer-titles-color: #fff;
 
-$input-focus-background-color: #EFEFE3;
-$input-background-color: #CCC;
-$input-foreground-color: #000;
-$highlight-color: #7C8E46;	
 
 // Fonts
 $blueprint-font-family: Arial, Helvetica, sans-serif;
 $blueprint-font-size: 12px;
+
+// Forms
+$label-width: 120px;
 
 // Use this to calculate the width based on the total width.
 // Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.

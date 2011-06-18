@@ -1,6 +1,6 @@
 module NavigationHelper
     def ensure_navigation
-        @navigation ||= [ { :title => 'Home', :url => '/' } ]
+        @navigation ||= [ { :title => t(:home), :url => '/' } ]
     end
 
     def navigation_add(title, url)

@@ -1,4 +1,4 @@
-%h2 Edit 
+%h2= t(:edit)
 
 = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }, :validate => true) do |f|
 
@@ -6,21 +6,20 @@
     %ul
       %li
         %a{ :href => '#tabs-1'}
-          = resource_name.to_s.humanize
+          = t(resource_name.to_s.humanize)
       %li
         %a{ :href => '#tabs-2'}
-          Cancel my account
+          = t(:cancel_my_account)
           
     #tabs-1
       = f.input :email
-      = f.input :password, :hint => 'leave blank if you dont want to change it'
+      = f.input :password, :hint => t(:edit_account_password)
       = f.input :password_confirmation, :hint => '.'
-      = f.input :current_password, :hint => 'we need your current password to confirm your changes'
+      = f.input :current_password
       
     #tabs-2  
-      Unhappy?
-      = link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete
-      = link_to "Back", :back
+      %p= t(:unhappy)
+      = link_to t(:cancel_my_account), registration_path(resource_name), :confirm => t(:are_you_sure), :method => :delete
   = f.button :submit
 
-- navigation_add 'Edit Account', edit_user_registration_path
+- navigation_add t(:edit_account), edit_user_registration_path

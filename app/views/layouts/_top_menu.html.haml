@@ -1,9 +1,9 @@
 %ul
-  = link_to('Home', root_path)
+  = link_to(t(:home), root_path)
   = render 'devise/menu/login_items'
   - if user_signed_in?
     %li
-      = link_to('My Profile', profile_path(current_user.id))
+      = link_to(t(:profile), profile_path(current_user.id))
   
   = render 'devise/menu/registration_items'
   

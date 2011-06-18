@@ -2,6 +2,12 @@ en:
   simple_form:
     "yes": 'Yes'
     "no": 'No'
+    hints:
+      current_password: 'We need your current password to confirm your changes'
+      about: 'Tell us something about you'
+      display_name: 'Your real name'
+      location: 'Where in the world are you?'
+      website: 'Do you have a website or blog?'
     required:
       text: 'required'
       mark: '*'

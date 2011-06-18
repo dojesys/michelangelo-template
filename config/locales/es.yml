@@ -1,0 +1,36 @@
+es:
+  date:
+    formats:
+      default: "%d/%m/%Y"
+
+  helpers:
+    submit:
+      profile:
+        update: "Actualizar el perfil"
+        
+            
+  home: 'Inicio'
+  sign_in:  'Ingresar'
+  sign_in_with: 'Ingresar con'
+  sign_up:  'Regístrate'
+  login:  'Iniciar sesión'
+  logout: 'Cerrar sesión'
+  profile: 'Mi perfil'
+  edit_account: 'Editar cuenta de usuario'
+  forgot_your_password: '¿Olvidaste tu contraseña?'
+  cancel_my_account: 'Cancelar mi cuenta'
+  are_you_sure: '¿Está seguro?'
+  left: 'Izquierda'
+  right:  'Derecha'
+  middle: 'Centro'
+  edit: 'Editando'
+  unhappy: '¿No está feliz?'
+  edit_account_password: 'dejar en blanco si no quiere cambiarla'
+  User: 'Usuario'
+  profile: 'Perfil'
+  connections: 'Conexiones'
+  male: 'Masculino'
+  female: 'Femenino'
+  gravatar: 'Gravatar'
+  inbox:  'Bandeja'
+  search_button:  'Buscar'
