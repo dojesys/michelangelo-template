@@ -13,6 +13,10 @@
   %br/
 
 - if devise_mapping.omniauthable?
-  - resource_class.omniauth_providers.each do |provider, name|
-    = link_to image_tag("/images/#{provider}.png", :title => t(:sign_in_with) + " #{provider}"), omniauth_authorize_path(resource_name, provider), :id => "sign_in_#{provider}"
+  - resource_class.omniauth_providers.each do |provider|
+    - if provider == :twitter
+      - if user_signed_in?
+        = link_to image_tag("/images/#{provider}.png", :title => t(:sign_in_with) + " #{provider}"), omniauth_authorize_path(resource_name, provider), :id => "sign_in_#{provider}" 
+    - else
+      = link_to image_tag("/images/#{provider}.png", :title => t(:sign_in_with) + " #{provider}"), omniauth_authorize_path(resource_name, provider), :id => "sign_in_#{provider}"
     

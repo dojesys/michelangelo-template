@@ -6,13 +6,18 @@
     %ul
       %li
         %a{ :href => '#tabs-1'}
+          /- if session[:omniauth]
+          /  New Account with Twitter
+          /- else
           New Account
+          
           
     #tabs-1
       #actions
         = render :partial => "devise/shared/links"
         
       = f.input :email
+      /- if !session[:omniauth]
       = f.input :password
       = f.input :password_confirmation
       

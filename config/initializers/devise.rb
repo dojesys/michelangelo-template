@@ -184,6 +184,9 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   #config.omniauth :facebook, "198381556874626", "269fd7630c5cc04ea90ee27b5b633add"
   config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
+#  config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
+  config.omniauth :twitter, "kKCnpNyKnJvDlnvdQwQXTQ", "81PTIe87AOxrjPXad4DjUWKjP4pPgV3CpUPROzgXM"
+
   # config.omniauth :open_id, OpenID::Store::Filesystem.new('/tmp'), {:name => "google", :domain => "https://www.google.com/accounts/o8/id" }
   config.omniauth :google_apps, OpenID::Store::Filesystem.new('/tmp'), :domain => 'gmail.com'
 

@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   has_one :profile, :dependent => :destroy
+  has_many :authentications
   
   after_create :create_profile
     
@@ -19,15 +20,6 @@ class User < ActiveRecord::Base
     if user = User.find_by_email(data["email"])
       user
     else # Create a user with a stub password. 
-      usuario = User.create!(:email => data["email"], :password => Devise.friendly_token[0,20])
-    end
-  end
-
-  def self.find_for_open_id(access_token, signed_in_resource=nil)
-    data = access_token['user_info']
-    if user = User.find_by_email(data["email"])
-      user
-    else # Create a user with a stub password.
       User.create!(:email => data["email"], :password => Devise.friendly_token[0,20])
     end
   end
@@ -40,6 +32,14 @@ class User < ActiveRecord::Base
       User.create!(:email => data["email"], :password => Devise.friendly_token[0,20])
     end
   end
+  
+  
+#  def password_required?
+#    logger.debug "Tiene autentincations? #{authentications.empty?}"
+#    logger.debug "Password en blanco? #{!password.blank?}"
+#
+#    (authentications.empty? || !password.blank?) && super 
+#  end
   
   protected
   

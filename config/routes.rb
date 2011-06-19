@@ -1,5 +1,7 @@
 MichelangeloTemplate::Application.routes.draw do
- filter :locale, :pagination, :uuid
+  filter :locale, :pagination, :uuid
+
+  resources :authentications
  
   get "profile/:id" => "profiles#edit", :as => :profile
   
@@ -11,6 +13,7 @@ MichelangeloTemplate::Application.routes.draw do
   
   get 'admin' => 'admin#index'
   
+#  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", :registrations => "registrations" }
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # The priority is based upon order of creation:

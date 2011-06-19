@@ -42,6 +42,7 @@
               #logo
                 %h1= Settings.app_title
             #right
+              = link_to image_tag("/images/twitter.png", :title => t(:sign_in_with) + " Twitter"), omniauth_authorize_path(:user, :twitter), :id => "sign_in_twitter" 
         
         #breadcrumbs
           #container
