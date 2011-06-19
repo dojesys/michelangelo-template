@@ -17,7 +17,7 @@
         = image_tag current_user.gravatar_url(:size => 120)
     
       = f.input :display_name
-      = f.input :about, :input_html => { :rows => '2' }
+      = f.input :about, :input_html => { :cols => '50', :rows => '6' }
       = f.input :gender, :as => :radio, :collection => { t(:male) => 0, t(:female) => 1 }
       = f.input :location
       = f.input :website
