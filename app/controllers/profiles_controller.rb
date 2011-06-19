@@ -8,7 +8,7 @@ class ProfilesController < ApplicationController
   def update
     @profile = Profile.find(params[:id])
     if @profile.update_attributes(params[:profile])
-      redirect_to @profile, :notice  => "Successfully updated profile."
+      redirect_to @profile, :notice  => t(:update_profile_notice)
     else
       render :action => 'edit'
     end

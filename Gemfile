@@ -34,8 +34,6 @@ gem "nifty-generators", :group => :development
 gem 'routing-filter'
 gem 'settingslogic'
 
-# Hack #
-
 gem 'escape_utils'
 
 group :test do

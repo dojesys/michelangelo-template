@@ -3,7 +3,7 @@ class Profile < ActiveRecord::Base
   
   belongs_to :user
   
-  LOCALES = [['English', 'en'], ['Spanish', 'es']]
+  LOCALES = [[ I18n.t(:english) , 'en'], [ I18n.t(:spanish) , 'es']]
 
   validates_inclusion_of :locale, :in => %w(en es)
 

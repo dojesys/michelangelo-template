@@ -14,6 +14,7 @@ es:
       location: 'Ubicación'
       website:  'Sitio web'
       birthday: 'Fecha de nacimiento'
+      locale: 'Idioma'
     hints:
       current_password: 'Necesitamos tu contraseña actual para confirmar los cambios'
       about: 'Cuéntanos algo sobre ti'

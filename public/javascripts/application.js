@@ -5,14 +5,15 @@
 $(function() {
 	if ($("#flash:has(*)").length) {
   	$('#flash').delay(500).fadeIn('normal', function() {
-    	$(this).delay(2500).fadeOut();
+    	$(this).delay(5500).fadeOut();
   	});
 	}
 });
 
 // DatePicker
 $(function() {
-	$('#profile_birthday').datepicker( { 
+	$("input.date_picker").datepicker( { 
+// FIXME: tomar la fecha de local en yaml
 		dateFormat: 'dd/mm/yy', 
 		autoSize: true, 
 		showOn: "button",
