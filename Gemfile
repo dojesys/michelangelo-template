@@ -21,7 +21,8 @@ gem 'simple_form'
 gem 'client_side_validations'
 
 gem 'devise'
-# gem 'omniauth'
+# gem 'omniauth' #
+gem 'cancan'
 gem 'oa-oauth', :require => 'omniauth/oauth'
 gem 'oa-openid', :require => 'omniauth/openid'
 gem 'gravtastic'
