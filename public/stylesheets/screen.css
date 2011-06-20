@@ -800,15 +800,65 @@ body .wrapper #main #container #content h2 {
   font-size: 24px;
   margin-bottom: 0px;
 }
-/* line 376, ../../app/stylesheets/screen.scss */
+/* line 374, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content h4 {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 14px;
+}
+/* line 380, ../../app/stylesheets/screen.scss */
 body .wrapper #main #container #content #tabs #actions {
   margin: -13px;
   padding: 0px;
   display: inline;
   float: right;
 }
-
+/* line 387, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #sign-social {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: right;
+}
 /* line 392, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #sign-social ul {
+  list-style-type: none;
+}
+/* line 395, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #sign-social ul li {
+  margin-bottom: 10px;
+}
+/* line 401, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #authentications {
+  display: block;
+}
+/* line 406, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #authentications #actives #provider {
+  border: solid 1px #cccccc;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 5px;
+  float: left;
+  font-size: 10px;
+  text-align: center;
+}
+/* line 417, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #authentications #actives #provider p {
+  padding: 1px;
+  margin: 1px;
+}
+/* line 424, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #authentications #availables {
+  clear: left;
+}
+/* line 427, ../../app/stylesheets/screen.scss */
+body .wrapper #main #container #content #tabs #authentications #availables img {
+  margin-right: 10px;
+}
+
+/* line 444, ../../app/stylesheets/screen.scss */
 .simple_form label {
   float: left;
   width: 120px;
@@ -817,12 +867,12 @@ body .wrapper #main #container #content #tabs #actions {
   font-size: 11px;
 }
 
-/* line 400, ../../app/stylesheets/screen.scss */
+/* line 452, ../../app/stylesheets/screen.scss */
 .simple_form div.input {
   margin-bottom: 10px;
 }
 
-/* line 407, ../../app/stylesheets/screen.scss */
+/* line 459, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"],
 .simple_form input[type="password"],
 .simple_form input[type="email"],
@@ -836,7 +886,7 @@ body .wrapper #main #container #content #tabs #actions {
   -webkit-border-radius: 5px;
 }
 
-/* line 418, ../../app/stylesheets/screen.scss */
+/* line 470, ../../app/stylesheets/screen.scss */
 .simple_form input[type="text"]:focus,
 .simple_form input[type="password"]:focus,
 .simple_form input[type="email"]:focus,
@@ -850,29 +900,30 @@ body .wrapper #main #container #content #tabs #actions {
   outline: 1px solid #7c8e46;
 }
 
-/* line 426, ../../app/stylesheets/screen.scss */
+/* line 478, ../../app/stylesheets/screen.scss */
 .simple_form input[type='submit'] {
   float: right;
+  margin-right: 5px;
 }
 
-/* line 433, ../../app/stylesheets/screen.scss */
+/* line 486, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean, .simple_form input[type='submit'] {
   margin-left: 120px;
 }
 
-/* line 437, ../../app/stylesheets/screen.scss */
+/* line 490, ../../app/stylesheets/screen.scss */
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
 
-/* line 442, ../../app/stylesheets/screen.scss */
+/* line 495, ../../app/stylesheets/screen.scss */
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
 
-/* line 447, ../../app/stylesheets/screen.scss */
+/* line 500, ../../app/stylesheets/screen.scss */
 .simple_form .error {
   clear: left;
   margin-left: 135px;
@@ -881,7 +932,7 @@ body .wrapper #main #container #content #tabs #actions {
   display: inline;
 }
 
-/* line 455, ../../app/stylesheets/screen.scss */
+/* line 508, ../../app/stylesheets/screen.scss */
 .simple_form .hint {
   clear: left;
   margin-left: 130px;
@@ -893,26 +944,26 @@ body .wrapper #main #container #content #tabs #actions {
   padding-top: 0px;
 }
 
-/* line 466, ../../app/stylesheets/screen.scss */
+/* line 519, ../../app/stylesheets/screen.scss */
 .simple_form a {
   text-decoration: none;
 }
-/* line 469, ../../app/stylesheets/screen.scss */
+/* line 522, ../../app/stylesheets/screen.scss */
 .simple_form a:hover {
   color: #7c8e46;
 }
 
-/* line 475, ../../app/stylesheets/screen.scss */
+/* line 528, ../../app/stylesheets/screen.scss */
 div.ui-datepicker {
   font-size: 12px;
 }
 
-/* line 479, ../../app/stylesheets/screen.scss */
+/* line 532, ../../app/stylesheets/screen.scss */
 #gravatar-form {
   margin-bottom: 5px;
   padding: 5px;
 }
-/* line 483, ../../app/stylesheets/screen.scss */
+/* line 536, ../../app/stylesheets/screen.scss */
 #gravatar-form img {
   margin-left: 5px;
 }

@@ -1,8 +1,6 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def twitter
-    logger.debug "INICIO!"
     if current_user
-      logger.debug "ESTA EL USUARIO!"
       omniauth = env["omniauth.auth"]
       logger.debug "DATA #{omniauth}"
       

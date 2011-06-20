@@ -182,13 +182,10 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
-  #config.omniauth :facebook, "198381556874626", "269fd7630c5cc04ea90ee27b5b633add"
   config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
-#  config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
-  config.omniauth :twitter, "kKCnpNyKnJvDlnvdQwQXTQ", "81PTIe87AOxrjPXad4DjUWKjP4pPgV3CpUPROzgXM"
-
-  # config.omniauth :open_id, OpenID::Store::Filesystem.new('/tmp'), {:name => "google", :domain => "https://www.google.com/accounts/o8/id" }
+  config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
   config.omniauth :google_apps, OpenID::Store::Filesystem.new('/tmp'), :domain => 'gmail.com'
+  # config.omniauth :open_id, OpenID::Store::Filesystem.new('/tmp'), {:name => "google", :domain => "https://www.google.com/accounts/o8/id" }
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

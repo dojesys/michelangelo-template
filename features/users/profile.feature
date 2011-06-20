@@ -17,3 +17,33 @@ Feature: User Profiles
     And I select "English" from "Locale"
     And I press "Update Profile"
     Then I should see "Successfully updated profile."
+
+  Scenario: User add a facebook authentication service to his profile
+    Given I am a user with an email "user@test.com" and password "please"
+    When I sign in as "user@test.com/please"
+    Then I should be signed in
+    When I follow "My profile"
+    When I follow "authentications"
+    Then I should see "Available authentications"
+    When I follow "sign_in_facebook"
+    Then I should see "Successfully authorized from Facebook account."
+
+  Scenario: User add a google authentication service to his profile
+    Given I am a user with an email "user@test.com" and password "please"
+    When I sign in as "user@test.com/please"
+    Then I should be signed in
+    When I follow "My profile"
+    When I follow "authentications"
+    Then I should see "Available authentications"
+    When I follow "sign_in_google_apps"
+    Then I should see "Successfully authorized from Google account."
+
+  Scenario: User add a twitter authentication service to his profile
+    Given I am a user with an email "user@test.com" and password "please"
+    When I sign in as "user@test.com/please"
+    Then I should be signed in
+    When I follow "My profile"
+    When I follow "authentications"
+    Then I should see "Available authentications"
+    When I follow "sign_in_twitter"
+    Then I should see "Successfully authorized from Twitter account."

@@ -52,11 +52,36 @@ Spork.each_run do
   #
   OmniAuth.config.mock_auth[:facebook] = {
     'uid' => '123545',
-    'extra' => { 'user_hash' => { 'email' => 'user@test.com' } }
+    'extra' => { 
+      'user_hash' => { 
+        'email' => 'user@test.com',
+        'name' => 'User Name',
+        'bio' => "I'm a cool User",
+        'gender' => 'male'
+      }
+    }
   }
 
-  OmniAuth.config.mock_auth[:open_id] = {
-    'user_info' => { 'email' => 'user@test.com' }
+  OmniAuth.config.mock_auth[:google_apps] = {
+    'uid' => '123545',
+    'user_info' => {
+      'email' => 'user@test.com',
+      'name' => 'User Name'
+    }
+  }
+
+  OmniAuth.config.mock_auth[:twitter] = {
+    'uid' => '123545',
+    'extra' => { 
+      'user_info' => { 
+        'name' => 'User Name'
+      }, 
+      'user_hash' => { 
+        'description' => "I'm a cool User",
+        'location' => 'Right Here',
+        'url' => 'http://cool.i.am'
+      } 
+    }
   }
 
 end

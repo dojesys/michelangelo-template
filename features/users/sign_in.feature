@@ -37,8 +37,8 @@ Feature: Sign in
       When I follow "sign_in_facebook"
       Then I should see "Successfully authorized from Facebook account."
       
-    Scenario: User signs in successfully with open id
+    Scenario: User signs in successfully with google
       Given I am not logged in
       When I go to the sign in page
-      When I follow "sign_in_open_id"
-      Then I should see "Successfully authorized from Open Id account."
+      When I follow "sign_in_google_apps"
+      Then I should see "Successfully authorized from Google account."

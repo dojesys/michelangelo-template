@@ -13,6 +13,5 @@
   #separator
     |
   #user-inbox
-    =t(:inbox)
-    %a{:href => "#"}
-      0
+    = t(:inbox)
+    = link_to "0", profile_path(current_user.id) + "#tabs-3"

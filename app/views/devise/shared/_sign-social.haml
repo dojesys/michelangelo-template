@@ -1,0 +1,9 @@
+%ul
+  - if devise_mapping.omniauthable?
+    - resource_class.omniauth_providers.each do |provider|
+      - if provider != :twitter
+        %li
+          - if controller_name == 'registrations'
+            = link_to image_tag("/images/signup_#{provider}_#{params[:locale]}.png", :title => t(:sign_up_with) + " #{provider}"), omniauth_authorize_path(resource_name, provider), :id => "sign_up_#{provider}"
+          - elsif controller_name == 'sessions'
+            = link_to image_tag("/images/signin_#{provider}_#{params[:locale]}.png", :title => t(:sign_in_with) + " #{provider}"), omniauth_authorize_path(resource_name, provider), :id => "sign_in_#{provider}"

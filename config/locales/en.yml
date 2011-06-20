@@ -10,6 +10,10 @@ en:
   sign_in:  'Sign in'
   sign_in_with: 'Sign in with'
   sign_up:  'Sign up'
+  sign_up_with: 'Sign up with'
+  you_are_authenticated_with: "you're authenticated with"
+  available_authentications: 'available authentications'
+  remove_authentication: 'remove this authentication'
   profile:  'My profile'
   forgot_your_password: 'Forgot your password?'
   cancel_my_account: 'Cancel my account'
@@ -20,3 +24,5 @@ en:
   english:  'English'
   spanish:  'Spanish'
   update_profile_notice: 'Successfully updated profile.'
+  destroy_authentication_notice: 'Successfully removed authentication.'
+  destroy_authentication_confirm: 'Are you sure you want to remove this authentication'

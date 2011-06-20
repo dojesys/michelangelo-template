@@ -1,0 +1,4 @@
+- if user_signed_in?
+  - current_user.authentications.each do |authentication|
+    = image_tag("/images/#{authentication.provider}_banner.png", :title => t(:you_are_authenticated_with).capitalize + " #{authentication.provider}")
+    

@@ -9,9 +9,16 @@
         %a{ :href => '#tabs-1'}
           = t(:general)
       %li
-        %a{ :href => '#tabs-2'}
-          = t(:connections)
+        %a{ :href => '#tabs-2', :id => :authentications }
+          = t(:authentications)
+      %li
+        %a{ :href => '#tabs-3'}
+          = t(:inbox)
+
     #tabs-1  
+      #actions
+        = render :partial => 'authentications/banners'
+        
       = f.label t(:gravatar)
       #gravatar-form
         = image_tag current_user.gravatar_url(:size => 120)
@@ -24,6 +31,19 @@
       = f.input :birthday, :as => :date_picker
       = f.input :locale, :as => :select, :collection => Profile::LOCALES 
     #tabs-2
-      %p=t(:connections)
+      #authentications
+        #actives
+          %h4= t(:you_are_authenticated_with).capitalize
+          - current_user.authentications.each do |authentication|
+            #provider
+              %p= image_tag("/images/#{authentication.provider}.png", :title => t(:you_are_authenticated_with).capitalize + " #{authentication.provider}")
+              %p= authentication_user_id(authentication.provider, authentication.uid)
+              %p= link_to image_tag("/images/delete.png", :title => t(:remove_authentication)), authentication, :confirm => t(:destroy_authentication_confirm), :method => :delete
+        #availables
+          %h4= t(:available_authentications).capitalize
+          - current_user.authentication_providers.each do |provider|
+            = link_to image_tag("/images/#{provider}.png", :title => t(:sign_in_with) + " #{provider}"), omniauth_authorize_path(:user, provider), :id => "sign_in_#{provider}"
+
+    #tabs-3
       
   = f.button :submit

@@ -33,13 +33,9 @@ class User < ActiveRecord::Base
     end
   end
   
-  
-#  def password_required?
-#    logger.debug "Tiene autentincations? #{authentications.empty?}"
-#    logger.debug "Password en blanco? #{!password.blank?}"
-#
-#    (authentications.empty? || !password.blank?) && super 
-#  end
+  def authentication_providers
+    ['facebook', 'twitter', 'google_apps']
+  end
   
   protected
   

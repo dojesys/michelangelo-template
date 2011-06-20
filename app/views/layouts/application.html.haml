@@ -42,7 +42,6 @@
               #logo
                 %h1= Settings.app_title
             #right
-              = link_to image_tag("/images/twitter.png", :title => t(:sign_in_with) + " Twitter"), omniauth_authorize_path(:user, :twitter), :id => "sign_in_twitter" 
         
         #breadcrumbs
           #container
@@ -66,15 +65,15 @@
       #footer
         #container
           #left
-            %h1=t(:left)
-            #menu
-              = render 'layouts/top_menu'
+            //%h1=t(:left)
+            //            #menu
+            //              = render 'layouts/top_menu'
           #middle
-            %h1=t(:middle)
-            #menu
-              = render 'layouts/top_menu'
+            //%h1=t(:middle)
+            //            #menu
+            //              = render 'layouts/top_menu'
           #right
-            %h1=t(:right)
-            #menu
-              = render 'layouts/top_menu'
+            //%h1=t(:right)
+            //            #menu
+            //              = render 'layouts/top_menu'
 
