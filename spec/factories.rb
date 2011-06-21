@@ -14,3 +14,8 @@ Factory.define :profile do |p|
   p.birthday 30.years.ago
   p.locale 'en'
 end
+
+Factory.define :authentication do |a|
+  a.provider 'facebook'
+  a.uid '12345'
+end
